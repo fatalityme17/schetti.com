@@ -83,7 +83,7 @@ function Trust() {
   const items = [
     { k: "Сотрудничество", v: "Напрямую с Ольгой" },
     { k: "Квалификация", v: "Ingenieurin (IT)" },
-    { k: "Ответ", v: "В течение рабочего дня" },
+    { k: "Опыт", v: "ИТ-проекты с 2021 года" },
     { k: "Языки", v: "DE · EN · RU" },
   ];
 
@@ -108,6 +108,7 @@ function Starter() {
     "Совместная настройка WhatsApp Business",
     "Понятные способы связи по электронной почте и WhatsApp",
     "Подготовка до двух профилей в социальных сетях",
+    "Единый стиль на основе имеющихся материалов",
     "До 3 часов корректировок включено",
   ];
 
@@ -149,6 +150,10 @@ function Starter() {
           Условие: материалы и доступы предоставлены. Домен, хостинг и платные сторонние сервисы в
           стоимость не входят.
         </p>
+        <p className="mt-4 text-sm leading-relaxed text-ink-muted">
+          Подходит мастерским, салонам, клининговым компаниям, локальным специалистам и начинающему
+          бизнесу.
+        </p>
         <div className="mt-8 border-t border-line pt-6">
           <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-ink-muted">
             Можно дополнить
@@ -171,6 +176,9 @@ function Starter() {
               <span className="ml-2 text-accent">от 39 €/час</span>
             </div>
           </div>
+          <p className="mt-5 text-sm leading-relaxed text-ink-muted">
+            Многоязычные сайты, простые CRM-решения и индивидуальные ИТ-проекты — по договорённости.
+          </p>
         </div>
       </div>
     </section>
@@ -251,7 +259,7 @@ function Contact() {
           Обсудим присутствие вашего бизнеса в интернете.
         </h2>
         <p className="mt-5 leading-relaxed text-ink-muted">
-          Достаточно двух-трёх предложений о вашем бизнесе. Я отвечу в течение одного рабочего дня.
+          Достаточно двух-трёх предложений о вашем бизнесе. Я отвечу в ближайшее время.
         </p>
         <ContactLinks isRussian emailSubject="Присутствие бизнеса в интернете" />
         <p className="mt-5 text-xs text-ink-muted">

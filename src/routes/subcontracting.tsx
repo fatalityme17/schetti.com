@@ -184,9 +184,9 @@ function Profile() {
           </h3>
           <p className="mt-2 text-sm text-ink-muted">Projekterfahrung seit 2021 · Deutschland</p>
           <ul className="mt-7 space-y-3 text-ink-muted">
-            <li>Anforderungen und Prozesse analysieren und dokumentieren</li>
-            <li>Projekte von der Konzeption bis zur Umsetzung begleiten</li>
-            <li>Fachbereich, Design, Entwicklung und Test zusammenbringen</li>
+            <li>Anforderungen, Prozesse und Automatisierungspotenziale analysieren</li>
+            <li>CRM-Workflows und digitale Abläufe strukturieren</li>
+            <li>Projekte von der Konzeption bis zum produktiven Einsatz begleiten</li>
           </ul>
         </div>
         <div className="border-t border-line pt-6 md:border-l md:border-t-0 md:pl-10 md:pt-0">

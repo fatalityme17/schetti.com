@@ -82,7 +82,7 @@ function Trust() {
   const items = [
     { k: "Zusammenarbeit", v: "Direkt mit Olga" },
     { k: "Qualifikation", v: "Ingenieurin (IT)" },
-    { k: "Rückmeldung", v: "Innerhalb eines Werktages" },
+    { k: "Erfahrung", v: "IT-Projekte seit 2021" },
     { k: "Sprachen", v: "DE · EN · RU" },
   ];
 
@@ -107,6 +107,7 @@ function Starter() {
     "WhatsApp Business gemeinsam eingerichtet",
     "Klare Kontaktwege für E-Mail und WhatsApp",
     "Bis zu zwei Social-Media-Profile vorbereitet",
+    "Vorhandenes Erscheinungsbild vereinheitlicht",
     "Bis zu 3 Stunden Korrekturen inklusive",
   ];
 
@@ -148,6 +149,10 @@ function Starter() {
           Voraussetzung: Inhalte und Zugänge liegen vor. Domain, Hosting und kostenpflichtige
           Drittanbieter-Dienste sind nicht enthalten.
         </p>
+        <p className="mt-4 text-sm leading-relaxed text-ink-muted">
+          Ideal für Handwerk, Werkstätten, Salons, Reinigungsfirmen, lokale Dienstleister und
+          Gründungen.
+        </p>
         <div className="mt-8 border-t border-line pt-6">
           <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-ink-muted">
             Modular erweiterbar
@@ -170,6 +175,10 @@ function Starter() {
               <span className="ml-2 text-accent">ab 39 €/Stunde</span>
             </div>
           </div>
+          <p className="mt-5 text-sm leading-relaxed text-ink-muted">
+            Mehrsprachige Websites, einfache CRM-Lösungen und individuelle IT-Projekte nach
+            Absprache.
+          </p>
         </div>
       </div>
     </section>
@@ -251,7 +260,7 @@ function Contact() {
           Lassen Sie uns Ihren Online-Auftritt klären.
         </h2>
         <p className="mt-5 leading-relaxed text-ink-muted">
-          Zwei bis drei Sätze zu Ihrem Unternehmen genügen. Ich antworte innerhalb eines Werktages.
+          Zwei bis drei Sätze zu Ihrem Unternehmen genügen. Ich melde mich zeitnah zurück.
         </p>
         <ContactLinks emailSubject="Online-Auftritt für mein Unternehmen" />
         <p className="mt-5 text-xs text-ink-muted">Aktuell verfügbar · remote im DACH-Raum</p>
