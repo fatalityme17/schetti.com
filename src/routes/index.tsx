@@ -4,7 +4,7 @@ import { ContactLinks, Page } from "@/components/site-layout";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Olga Schetti — Digitale Infrastruktur für kleine Unternehmen" },
+      { title: "Olga Schetti — IT-Freiberuflerin" },
       {
         name: "description",
         content:
