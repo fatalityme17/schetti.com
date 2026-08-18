@@ -8,16 +8,15 @@ export const Route = createFileRoute("/ru")({
       {
         name: "description",
         content:
-          "Сайт, профиль компании в Google, WhatsApp Business и понятные способы связи для малого бизнеса в регионе DACH.",
+          "Профессиональное присутствие малого бизнеса в интернете: сайт, профиль компании в Google, WhatsApp Business и понятные способы связи.",
       },
       {
         property: "og:title",
-        content: "Ольга Щетти — Цифровая инфраструктура для малого бизнеса",
+        content: "Ольга Щетти — Цифровое присутствие малого бизнеса",
       },
       {
         property: "og:description",
-        content:
-          "Цифровая основа для малого бизнеса: заметность в интернете, понятная настройка и личное сопровождение.",
+        content: "Чтобы новые клиенты находили ваш бизнес там, где они ищут и сравнивают услуги.",
       },
       { property: "og:url", content: "/ru" },
     ],
@@ -49,21 +48,22 @@ function Hero() {
   return (
     <header className="mb-20 md:mb-28">
       <p className="mb-6 font-display text-xs font-semibold uppercase tracking-[0.22em] text-accent">
-        Цифровая инфраструктура для малого бизнеса
+        Цифровое присутствие малого бизнеса
       </p>
       <h1 className="max-w-4xl font-display text-4xl font-bold leading-[1.08] tracking-tight text-ink md:text-6xl">
-        Заметный бизнес в интернете. Понятная цифровая основа.
+        Ваш бизнес в интернете — там, где его ищут новые клиенты.
       </h1>
       <p className="mt-8 max-w-2xl text-lg font-light leading-relaxed text-ink-muted md:text-xl">
-        Я настраиваю цифровую основу вашего бизнеса: сайт, профиль компании в Google, WhatsApp
-        Business и понятные способы связи. Просто, напрямую и в одном месте.
+        Я создаю профессиональное цифровое присутствие: сайт, профиль компании в Google, WhatsApp
+        Business и понятные способы связи. Так вас смогут найти и выбрать люди, которые сначала ищут
+        и сравнивают услуги онлайн.
       </p>
       <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm">
         <a
           href="#starter"
           className="inline-flex items-center bg-ink px-6 py-3 font-display font-medium tracking-wide text-background transition hover:bg-accent"
         >
-          Цифровая основа за 490 €
+          Присутствие в интернете за 490 €
         </a>
         <a
           href="#kontakt"
@@ -115,7 +115,7 @@ function Starter() {
     <section id="starter" className="mb-20 scroll-mt-24 md:mb-28">
       <div className="border border-line bg-surface-2 p-8 md:p-12">
         <p className="mb-4 text-[10px] font-semibold uppercase tracking-[0.22em] text-accent">
-          Цифровая основа
+          Присутствие в интернете
         </p>
         <div className="grid gap-10 md:grid-cols-[1fr_2fr] md:gap-16">
           <div>
@@ -176,7 +176,7 @@ function Starter() {
 function Approach() {
   const steps = [
     { no: "01", title: "Обсуждаем", body: "Согласовываем цель, материалы и доступы." },
-    { no: "02", title: "Настраиваю", body: "Создаю подходящую цифровую основу." },
+    { no: "02", title: "Настраиваю", body: "Создаю профессиональное присутствие в интернете." },
     {
       no: "03",
       title: "Передаю",
@@ -218,7 +218,7 @@ function About() {
         <p>
           Меня зовут Ольга Щетти. Я инженер в области информационных технологий. Соединяю
           технические знания с опытом цифровизации и ИТ-проектов, чтобы малый бизнес профессионально
-          выглядел в интернете и понимал собственную цифровую инфраструктуру.
+          выглядел в интернете и становился заметнее для новой цифровой аудитории.
         </p>
         <p className="mt-4 text-sm">
           Право использовать профессиональное наименование Ingenieurin признано в земле Северный
@@ -240,12 +240,12 @@ function Contact() {
           Контакт
         </p>
         <h2 className="font-display text-3xl font-bold tracking-tight text-ink md:text-4xl">
-          Обсудим цифровую основу вашего бизнеса.
+          Обсудим присутствие вашего бизнеса в интернете.
         </h2>
         <p className="mt-5 leading-relaxed text-ink-muted">
           Достаточно двух-трёх предложений о вашем бизнесе. Я отвечу в течение одного рабочего дня.
         </p>
-        <ContactLinks isRussian emailSubject="Цифровая основа для бизнеса" />
+        <ContactLinks isRussian emailSubject="Присутствие бизнеса в интернете" />
         <p className="mt-5 text-xs text-ink-muted">
           Сейчас доступна для проектов · удалённо в регионе DACH
         </p>

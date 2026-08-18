@@ -8,16 +8,16 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Website, Google-Unternehmensprofil, WhatsApp Business und klare Kontaktwege für kleine Unternehmen im DACH-Raum.",
+          "Professioneller Online-Auftritt für kleine Unternehmen: Website, Google-Unternehmensprofil, WhatsApp Business und klare Kontaktwege.",
       },
       {
         property: "og:title",
-        content: "Olga Schetti — Digitale Infrastruktur für kleine Unternehmen",
+        content: "Olga Schetti — Digitale Präsenz für kleine Unternehmen",
       },
       {
         property: "og:description",
         content:
-          "Die digitale Basis für kleine Unternehmen: online sichtbar, verständlich eingerichtet und persönlich begleitet.",
+          "Damit neue Kunden Ihr Unternehmen dort finden, wo sie heute suchen und vergleichen.",
       },
       { property: "og:url", content: "/" },
     ],
@@ -49,21 +49,22 @@ function Hero() {
   return (
     <header className="mb-20 md:mb-28">
       <p className="mb-6 font-display text-xs font-semibold uppercase tracking-[0.22em] text-accent">
-        Digitale Infrastruktur für kleine Unternehmen
+        Digitale Präsenz für kleine Unternehmen
       </p>
       <h1 className="max-w-4xl font-display text-4xl font-bold leading-[1.08] tracking-tight text-ink md:text-6xl">
-        Online sichtbar. Digital gut aufgestellt.
+        Ihr Unternehmen im Internet. Sichtbar für neue Kunden.
       </h1>
       <p className="mt-8 max-w-2xl text-lg font-light leading-relaxed text-ink-muted md:text-xl">
-        Ich richte die digitale Basis für Ihr Unternehmen ein — Website, Google-Unternehmensprofil,
-        WhatsApp Business und klare Kontaktwege. Verständlich, direkt und aus einer Hand.
+        Ich bringe Ihr Unternehmen professionell ins Internet — mit Website,
+        Google-Unternehmensprofil, WhatsApp Business und klaren Kontaktwegen. So erreichen Sie auch
+        Menschen, die Anbieter zuerst online suchen und vergleichen.
       </p>
       <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm">
         <a
           href="#starter"
           className="inline-flex items-center bg-ink px-6 py-3 font-display font-medium tracking-wide text-background transition hover:bg-accent"
         >
-          Digitale Basis für 490 € ansehen
+          Online-Auftritt für 490 € ansehen
         </a>
         <a
           href="#kontakt"
@@ -113,7 +114,7 @@ function Starter() {
     <section id="starter" className="mb-20 scroll-mt-24 md:mb-28">
       <div className="border border-line bg-surface-2 p-8 md:p-12">
         <p className="mb-4 text-[10px] font-semibold uppercase tracking-[0.22em] text-accent">
-          Digitale Basis
+          Ihr Online-Auftritt
         </p>
         <div className="grid gap-10 md:grid-cols-[1fr_2fr] md:gap-16">
           <div>
@@ -174,7 +175,7 @@ function Starter() {
 function Approach() {
   const steps = [
     { no: "01", title: "Klären", body: "Ziel, Inhalte und vorhandene Zugänge abstimmen." },
-    { no: "02", title: "Einrichten", body: "Die passende digitale Basis sauber aufbauen." },
+    { no: "02", title: "Einrichten", body: "Ihren Online-Auftritt sauber aufbauen." },
     {
       no: "03",
       title: "Übergeben",
@@ -216,7 +217,8 @@ function About() {
         <p>
           Ich bin Olga Schetti, Ingenieurin für Informationstechnologie. Ich verbinde technisches
           Verständnis mit Erfahrung in Digitalisierung und IT-Projekten — damit kleine Unternehmen
-          online professionell auftreten und ihre digitale Basis selbst verstehen.
+          professionell im Internet auftreten und auch eine digital orientierte Kundschaft
+          erreichen.
         </p>
         <p className="mt-4 text-sm">
           Die Berechtigung zum Führen der Berufsbezeichnung Ingenieurin wurde in Nordrhein-Westfalen
@@ -238,12 +240,12 @@ function Contact() {
           Kontakt
         </p>
         <h2 className="font-display text-3xl font-bold tracking-tight text-ink md:text-4xl">
-          Lassen Sie uns Ihre digitale Basis klären.
+          Lassen Sie uns Ihren Online-Auftritt klären.
         </h2>
         <p className="mt-5 leading-relaxed text-ink-muted">
           Zwei bis drei Sätze zu Ihrem Unternehmen genügen. Ich antworte innerhalb eines Werktages.
         </p>
-        <ContactLinks emailSubject="Digitale Basis für mein Unternehmen" />
+        <ContactLinks emailSubject="Online-Auftritt für mein Unternehmen" />
         <p className="mt-5 text-xs text-ink-muted">Aktuell verfügbar · remote im DACH-Raum</p>
       </div>
     </section>

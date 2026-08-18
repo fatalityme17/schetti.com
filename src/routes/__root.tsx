@@ -78,27 +78,27 @@ export const Route = createRootRoute({
       {
         name: "description",
         content:
-          "Freiberufliche IT-Ingenieurin für Business Analysis, Prozessdigitalisierung, Automatisierung und pragmatische AI-Lösungen im DACH-Raum.",
+          "IT-Freiberuflerin für die professionelle Online-Präsenz kleiner Unternehmen sowie Business Analysis und Prozesse für Projektteams.",
       },
       { name: "author", content: "Olga Schetti" },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "Olga Schetti" },
-      { property: "og:title", content: "Olga Schetti — Digitalisierung, Prozesse & AI" },
+      { property: "og:title", content: "Olga Schetti — Digitale Präsenz & Business Analysis" },
       {
         property: "og:description",
         content:
-          "Business Analysis, Prozessdigitalisierung, Automatisierung und pragmatische AI-Lösungen — für kleine Unternehmen und Projektteams im DACH-Raum.",
+          "Professioneller Online-Auftritt für kleine Unternehmen und externe Unterstützung für Projektteams im DACH-Raum.",
       },
       { property: "og:image", content: "https://schetti.com/og.png" },
       { property: "og:image:width", content: "1728" },
       { property: "og:image:height", content: "910" },
-      { property: "og:image:alt", content: "Olga Schetti — Digital einfacher arbeiten." },
+      { property: "og:image:alt", content: "Olga Schetti — Digital präsent. Klar aufgestellt." },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Olga Schetti — Digital einfacher arbeiten." },
+      { name: "twitter:title", content: "Olga Schetti — Digitale Präsenz & Business Analysis" },
       {
         name: "twitter:description",
         content:
-          "Digitalisierung, Prozesse und Automatisierung für kleine Unternehmen im DACH-Raum.",
+          "Professioneller Online-Auftritt für kleine Unternehmen und Unterstützung für Projektteams.",
       },
       { name: "twitter:image", content: "https://schetti.com/og.png" },
     ],
