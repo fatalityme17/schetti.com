@@ -182,7 +182,7 @@ function Profile() {
           <h3 className="font-display text-2xl font-semibold text-ink">
             IT-Projektmanagement & Digitalisierung
           </h3>
-          <p className="mt-2 text-sm text-ink-muted">Projekterfahrung seit 2021 · Deutschland</p>
+          <p className="mt-2 text-sm text-ink-muted">Projekterfahrung seit 2017</p>
           <ul className="mt-7 space-y-3 text-ink-muted">
             <li>Anforderungen, Prozesse und Automatisierungspotenziale analysieren</li>
             <li>CRM-Workflows und digitale Abläufe strukturieren</li>

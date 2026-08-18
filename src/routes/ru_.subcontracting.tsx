@@ -190,7 +190,7 @@ function Profile() {
           <h3 className="font-display text-2xl font-semibold text-ink">
             Управление ИТ-проектами и цифровизация
           </h3>
-          <p className="mt-2 text-sm text-ink-muted">Опыт проектов с 2021 года · Германия</p>
+          <p className="mt-2 text-sm text-ink-muted">Опыт проектов с 2017 года</p>
           <ul className="mt-7 space-y-3 text-ink-muted">
             <li>Анализ требований, процессов и возможностей автоматизации</li>
             <li>Структурирование CRM-процессов и цифровых рабочих сценариев</li>

@@ -82,7 +82,7 @@ function Trust() {
   const items = [
     { k: "Zusammenarbeit", v: "Direkt mit Olga" },
     { k: "Qualifikation", v: "Ingenieurin (IT)" },
-    { k: "Erfahrung", v: "IT-Projekte seit 2021" },
+    { k: "Erfahrung", v: "IT-Projekte seit 2017" },
     { k: "Sprachen", v: "DE · EN · RU" },
   ];
 
