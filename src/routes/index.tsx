@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Page } from "@/components/site-layout";
+import { ContactLinks, Page } from "@/components/site-layout";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -243,12 +243,7 @@ function Contact() {
         <p className="mt-5 leading-relaxed text-ink-muted">
           Zwei bis drei Sätze zu Ihrem Unternehmen genügen. Ich antworte innerhalb eines Werktages.
         </p>
-        <a
-          href="mailto:info@schetti.com?subject=Kostenloses%20Erstgespr%C3%A4ch"
-          className="mt-7 inline-flex border-b border-ink/40 pb-0.5 font-medium text-ink transition hover:border-accent hover:text-accent"
-        >
-          info@schetti.com
-        </a>
+        <ContactLinks emailSubject="Digitale Basis für mein Unternehmen" />
         <p className="mt-5 text-xs text-ink-muted">Aktuell verfügbar · remote im DACH-Raum</p>
       </div>
     </section>

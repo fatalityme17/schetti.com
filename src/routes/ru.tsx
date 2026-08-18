@@ -1,10 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Page } from "@/components/site-layout";
+import { ContactLinks, Page } from "@/components/site-layout";
 
 export const Route = createFileRoute("/ru")({
   head: () => ({
     meta: [
-      { title: "Olga Schetti — Цифровая инфраструктура для малого бизнеса" },
+      { title: "Ольга Щетти — Цифровая инфраструктура для малого бизнеса" },
       {
         name: "description",
         content:
@@ -12,7 +12,7 @@ export const Route = createFileRoute("/ru")({
       },
       {
         property: "og:title",
-        content: "Olga Schetti — Цифровая инфраструктура для малого бизнеса",
+        content: "Ольга Щетти — Цифровая инфраструктура для малого бизнеса",
       },
       {
         property: "og:description",
@@ -216,7 +216,7 @@ function About() {
       </h2>
       <div className="mt-6 max-w-3xl text-lg leading-relaxed text-ink-muted">
         <p>
-          Меня зовут Ольга Шетти. Я инженер в области информационных технологий. Соединяю
+          Меня зовут Ольга Щетти. Я инженер в области информационных технологий. Соединяю
           технические знания с опытом цифровизации и ИТ-проектов, чтобы малый бизнес профессионально
           выглядел в интернете и понимал собственную цифровую инфраструктуру.
         </p>
@@ -245,12 +245,7 @@ function Contact() {
         <p className="mt-5 leading-relaxed text-ink-muted">
           Достаточно двух-трёх предложений о вашем бизнесе. Я отвечу в течение одного рабочего дня.
         </p>
-        <a
-          href="mailto:info@schetti.com?subject=%D0%A6%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%D0%B0"
-          className="mt-7 inline-flex border-b border-ink/40 pb-0.5 font-medium text-ink transition hover:border-accent hover:text-accent"
-        >
-          info@schetti.com
-        </a>
+        <ContactLinks isRussian emailSubject="Цифровая основа для бизнеса" />
         <p className="mt-5 text-xs text-ink-muted">
           Сейчас доступна для проектов · удалённо в регионе DACH
         </p>

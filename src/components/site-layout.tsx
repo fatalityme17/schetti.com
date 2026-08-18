@@ -37,7 +37,7 @@ export function SiteHeader() {
       <div className="container-page flex h-16 items-center justify-between">
         <a href={homeHref} className="flex min-w-0 items-baseline gap-3">
           <span className="font-display text-lg font-semibold tracking-tight text-ink">
-            Olga Schetti
+            {isRussian ? "Ольга Щетти" : "Olga Schetti"}
           </span>
           <span className="hidden text-[9px] font-semibold uppercase tracking-[0.18em] text-ink-muted lg:inline">
             {isRussian ? "Цифровая инфраструктура" : "Digitale Infrastruktur"}
@@ -135,12 +135,33 @@ export function SiteFooter() {
     <footer className="border-t border-line/70">
       <div className="container-page flex flex-col gap-4 py-10 text-sm text-ink-muted md:flex-row md:items-center md:justify-between">
         <div>
-          <div className="font-display font-semibold text-ink">Olga Schetti</div>
+          <div className="font-display font-semibold text-ink">
+            {isRussian ? "Ольга Щетти" : "Olga Schetti"}
+          </div>
           <div className="mt-1 text-xs">Emmerich am Rhein · DACH remote</div>
         </div>
         <div className="flex flex-wrap gap-x-6 gap-y-2 text-xs">
           <a href="mailto:info@schetti.com" className="hover:text-ink">
             info@schetti.com
+          </a>
+          <a href="tel:+4915205215760" className="hover:text-ink">
+            +49 1520 5215760
+          </a>
+          <a
+            href="https://wa.me/4915205215760"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-ink"
+          >
+            WhatsApp
+          </a>
+          <a
+            href="https://t.me/fatalityme"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-ink"
+          >
+            Telegram
           </a>
           <a href={`${homeHref}#starter`} className="hover:text-ink">
             {isRussian ? "Предложение" : "Angebot"}
@@ -160,9 +181,47 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="container-page pb-8 text-[11px] text-ink-muted/70">
-        © {new Date().getFullYear()} Olga Schetti
+        © {new Date().getFullYear()} {isRussian ? "Ольга Щетти" : "Olga Schetti"}
       </div>
     </footer>
+  );
+}
+
+export function ContactLinks({
+  isRussian = false,
+  emailSubject,
+}: {
+  isRussian?: boolean;
+  emailSubject?: string;
+}) {
+  const emailHref = emailSubject
+    ? `mailto:info@schetti.com?subject=${encodeURIComponent(emailSubject)}`
+    : "mailto:info@schetti.com";
+
+  const links = [
+    { href: emailHref, label: "info@schetti.com" },
+    { href: "tel:+4915205215760", label: "+49 1520 5215760" },
+    { href: "https://wa.me/4915205215760", label: "WhatsApp", external: true },
+    { href: "https://t.me/fatalityme", label: "Telegram @fatalityme", external: true },
+  ];
+
+  return (
+    <div
+      className="mt-8 flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm"
+      aria-label={isRussian ? "Способы связи" : "Kontaktmöglichkeiten"}
+    >
+      {links.map((link) => (
+        <a
+          key={link.href}
+          href={link.href}
+          target={link.external ? "_blank" : undefined}
+          rel={link.external ? "noopener noreferrer" : undefined}
+          className="border-b border-ink/30 pb-0.5 font-medium text-ink transition hover:border-accent hover:text-accent"
+        >
+          {link.label}
+        </a>
+      ))}
+    </div>
   );
 }
 

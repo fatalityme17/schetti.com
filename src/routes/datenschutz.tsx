@@ -45,60 +45,137 @@ function Datenschutz() {
                 info@schetti.com
               </a>
             </p>
-          </Section>
-
-          <Section title="2. Hosting">
             <p>
-              Diese Website wird bei einem externen Hosting-Anbieter bereitgestellt. Beim Aufruf der
-              Website werden technisch erforderliche Verbindungsdaten verarbeitet, insbesondere die
-              IP-Adresse, Datum und Uhrzeit des Zugriffs, aufgerufene Seite, Referrer sowie Browser-
-              und Betriebssystem-Informationen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO
-              (berechtigtes Interesse am sicheren und stabilen Betrieb der Website).
+              Telefon:{" "}
+              <a href="tel:+4915205215760" className="text-accent hover:underline">
+                +49 1520 5215760
+              </a>
             </p>
           </Section>
 
-          <Section title="3. Kontaktaufnahme per E-Mail">
+          <Section title="2. Hosting über GitHub Pages">
             <p>
-              Wenn Sie per E-Mail Kontakt aufnehmen, werden Ihre Angaben zur Bearbeitung der Anfrage
-              und für mögliche Anschlussfragen verarbeitet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b
-              DSGVO, soweit die Kommunikation der Anbahnung oder Durchführung eines Vertrags dient,
-              andernfalls Art. 6 Abs. 1 lit. f DSGVO.
+              Diese Website wird über den Hosting-Dienst GitHub Pages bereitgestellt. Beim Aufruf
+              der Website verarbeitet GitHub insbesondere die IP-Adresse und weitere technisch
+              erforderliche Verbindungsdaten. Die Verarbeitung dient der sicheren und stabilen
+              Bereitstellung der Website. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO; das
+              berechtigte Interesse liegt im sicheren, zuverlässigen und technisch fehlerfreien
+              Betrieb des Online-Angebots.
+            </p>
+            <p>
+              Eine Verarbeitung von Daten in den USA kann dabei nicht ausgeschlossen werden. GitHub
+              informiert in seiner Datenschutzerklärung über Empfänger, Speicherdauer und die für
+              internationale Datenübermittlungen eingesetzten Garantien:{" "}
+              <a
+                href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-accent hover:underline"
+              >
+                GitHub-Datenschutzerklärung
+              </a>
+              .
+            </p>
+          </Section>
+
+          <Section title="3. Kontaktaufnahme per E-Mail oder Telefon">
+            <p>
+              Wenn Sie per E-Mail oder Telefon Kontakt aufnehmen, werden Ihre Kontaktdaten und die
+              mitgeteilten Inhalte zur Bearbeitung der Anfrage und für mögliche Anschlussfragen
+              verarbeitet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, soweit die Kommunikation
+              der Anbahnung oder Durchführung eines Vertrags dient, andernfalls Art. 6 Abs. 1 lit. f
+              DSGVO. Das berechtigte Interesse liegt in der sachgerechten Beantwortung Ihrer
+              Anfrage.
             </p>
             <p>
               Die Daten werden gelöscht, wenn die Anfrage abschließend bearbeitet wurde und keine
-              gesetzlichen Aufbewahrungspflichten entgegenstehen.
+              vertraglichen oder gesetzlichen Aufbewahrungspflichten entgegenstehen. Empfänger
+              können die für E-Mail und Telekommunikation eingesetzten Dienstleister sein.
             </p>
           </Section>
 
-          <Section title="4. Schriftarten">
+          <Section title="4. Kontakt über WhatsApp und Telegram">
+            <p>
+              Auf der Website befinden sich reine Links zu WhatsApp und Telegram. Erst wenn Sie
+              einen solchen Link anklicken, wird eine Verbindung zum jeweiligen Anbieter
+              hergestellt. Für die Nutzung gelten die Datenschutzbestimmungen des jeweiligen
+              Anbieters.
+            </p>
+            <p>
+              Wenn Sie über WhatsApp Kontakt aufnehmen, werden insbesondere Ihre Telefonnummer,
+              Profilangaben und die von Ihnen übermittelten Kommunikationsinhalte verarbeitet. Wenn
+              Sie Telegram nutzen, können insbesondere Ihr Nutzername, Profilangaben und die
+              Kommunikationsinhalte verarbeitet werden. Die Nutzung dieser Kanäle ist freiwillig;
+              alternativ stehen E-Mail und Telefon zur Verfügung.
+            </p>
+            <p>
+              Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, wenn die Kommunikation der Anbahnung
+              oder Durchführung eines Vertrags dient, andernfalls Art. 6 Abs. 1 lit. f DSGVO. Eine
+              Verarbeitung außerhalb der EU bzw. des EWR kann nicht ausgeschlossen werden. Weitere
+              Informationen finden Sie in den Datenschutzerklärungen von{" "}
+              <a
+                href="https://www.whatsapp.com/legal/privacy-policy-eea"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-accent hover:underline"
+              >
+                WhatsApp
+              </a>{" "}
+              und{" "}
+              <a
+                href="https://telegram.org/privacy?setln=de"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-accent hover:underline"
+              >
+                Telegram
+              </a>
+              .
+            </p>
+          </Section>
+
+          <Section title="5. Schriftarten">
             <p>
               Die auf dieser Website verwendeten Schriftarten werden lokal vom Server dieser Website
-              ausgeliefert. Beim Laden der Schriftarten wird keine Verbindung zu Servern von
-              Drittanbietern hergestellt und es werden keine Daten an Dritte übermittelt.
+              ausgeliefert. Beim Laden der Schriftarten wird keine zusätzliche Verbindung zu
+              externen Schriftarten-Anbietern wie Google Fonts hergestellt.
             </p>
           </Section>
 
-          <Section title="5. Cookies und Analyse">
+          <Section title="6. Cookies, lokale Speicherung und Analyse">
             <p>
-              Diese Website setzt keine eigenen Cookies ein und verwendet keine Webanalyse-Dienste
-              oder Marketing-Skripte.
+              Diese Website setzt keine eigenen Cookies ein, speichert keine Informationen im
+              Browser und verwendet keine Webanalyse-Dienste, Marketing-Skripte oder eingebettete
+              Inhalte von Drittanbietern. Daher wird derzeit kein Einwilligungsbanner eingesetzt.
+              Beim Anklicken externer Links können die jeweiligen Anbieter eigene Technologien nach
+              ihren Datenschutzbestimmungen verwenden.
             </p>
           </Section>
 
-          <Section title="6. Ihre Rechte">
+          <Section title="7. Ihre Rechte und Beschwerdemöglichkeit">
             <p>
               Sie haben im Rahmen der gesetzlichen Voraussetzungen insbesondere das Recht auf
               Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit
-              und Widerspruch. Außerdem können Sie sich bei einer Datenschutzaufsichtsbehörde
-              beschweren.
+              und Widerspruch. Sie können sich außerdem bei einer Datenschutzaufsichtsbehörde
+              beschweren, insbesondere bei der für Nordrhein-Westfalen zuständigen{" "}
+              <a
+                href="https://www.ldi.nrw.de/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-accent hover:underline"
+              >
+                Landesbeauftragten für Datenschutz und Informationsfreiheit Nordrhein-Westfalen
+              </a>
+              .
             </p>
           </Section>
 
-          <Section title="7. Aktualisierung dieser Erklärung">
+          <Section title="8. Aktualisierung dieser Erklärung">
             <p>
               Diese Datenschutzerklärung wird angepasst, wenn sich die Website, die eingesetzten
               Dienste oder die rechtlichen Anforderungen ändern.
             </p>
+            <p>Stand: August 2026.</p>
           </Section>
         </div>
 

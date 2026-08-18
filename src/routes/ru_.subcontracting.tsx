@@ -1,11 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type { ReactNode } from "react";
-import { Page } from "@/components/site-layout";
+import { ContactLinks, Page } from "@/components/site-layout";
 
 export const Route = createFileRoute("/ru_/subcontracting")({
   head: () => ({
     meta: [
-      { title: "Бизнес-анализ и процессы для проектных команд | Olga Schetti" },
+      { title: "Бизнес-анализ и процессы для проектных команд | Ольга Щетти" },
       {
         name: "description",
         content:
@@ -61,9 +61,9 @@ function Hero() {
       </p>
       <a
         href="#kontakt"
-        className="mt-10 inline-flex items-center bg-ink px-6 py-3 font-display text-sm font-medium tracking-wide text-background transition hover:bg-accent"
+        className="mt-9 inline-flex border-b border-ink/40 pb-0.5 text-sm font-medium text-ink transition hover:border-accent hover:text-accent"
       >
-        Обсудить проект
+        Контакт →
       </a>
       <p className="mt-5 text-xs text-ink-muted">
         Сейчас доступна для проектов · удалённо в регионе DACH
@@ -252,13 +252,7 @@ function Contact() {
         <p className="mt-6 text-lg text-ink-muted">
           Для первой оценки достаточно этапа проекта и ожидаемой поддержки.
         </p>
-        <a
-          href="mailto:info@schetti.com?subject=%D0%97%D0%B0%D0%BF%D1%80%D0%BE%D1%81%20%D0%BF%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%83%20%D1%81%20schetti.com"
-          className="mt-9 inline-flex items-center bg-ink px-8 py-4 font-display font-medium tracking-wide text-background transition hover:bg-accent"
-        >
-          Отправить запрос по проекту
-        </a>
-        <p className="mt-4 text-sm text-ink-muted">info@schetti.com</p>
+        <ContactLinks isRussian emailSubject="Запрос по проекту с schetti.com" />
         <p className="mt-5 text-xs text-ink-muted">
           Сейчас доступна для проектов · удалённо в регионе DACH
         </p>

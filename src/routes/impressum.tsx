@@ -43,6 +43,34 @@ function Impressum() {
                 info@schetti.com
               </a>
             </p>
+            <p>
+              Telefon:{" "}
+              <a href="tel:+4915205215760" className="text-accent hover:underline">
+                +49 1520 5215760
+              </a>
+            </p>
+            <p>
+              WhatsApp:{" "}
+              <a
+                href="https://wa.me/4915205215760"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-accent hover:underline"
+              >
+                +49 1520 5215760
+              </a>
+            </p>
+            <p>
+              Telegram:{" "}
+              <a
+                href="https://t.me/fatalityme"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-accent hover:underline"
+              >
+                @fatalityme
+              </a>
+            </p>
           </Section>
 
           <Section title="Berufsbezeichnung und berufsrechtliche Angaben">
@@ -51,8 +79,29 @@ function Impressum() {
               Die Berechtigung zum Führen der Berufsbezeichnung wurde in Nordrhein-Westfalen
               anerkannt.
             </p>
-            <p>Zuständige Behörde: Bezirksregierung Düsseldorf</p>
-            <p>Berufsrechtliche Regelung: Ingenieurgesetz des Landes Nordrhein-Westfalen</p>
+            <p>Staat der Anerkennung: Bundesrepublik Deutschland</p>
+            <p>
+              Zuständige Behörde:{" "}
+              <a
+                href="https://www.brd.nrw.de/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-accent hover:underline"
+              >
+                Bezirksregierung Düsseldorf
+              </a>
+            </p>
+            <p>
+              Berufsrechtliche Regelung:{" "}
+              <a
+                href="https://recht.nrw.de/lrgv/gesetz/22092021-gesetz-zum-schutze-der-berufsbezeichnung-ingenieuringenieurin-ingenieurgesetz/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-accent hover:underline"
+              >
+                Ingenieurgesetz des Landes Nordrhein-Westfalen
+              </a>
+            </p>
           </Section>
 
           <Section title="Steuerliche Angaben">

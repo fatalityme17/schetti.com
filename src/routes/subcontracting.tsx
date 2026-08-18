@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type { ReactNode } from "react";
-import { Page } from "@/components/site-layout";
+import { ContactLinks, Page } from "@/components/site-layout";
 
 export const Route = createFileRoute("/subcontracting")({
   head: () => ({
@@ -58,9 +58,9 @@ function Hero() {
       </p>
       <a
         href="#kontakt"
-        className="mt-10 inline-flex items-center bg-ink px-6 py-3 font-display text-sm font-medium tracking-wide text-background transition hover:bg-accent"
+        className="mt-9 inline-flex border-b border-ink/40 pb-0.5 text-sm font-medium text-ink transition hover:border-accent hover:text-accent"
       >
-        Projekt anfragen
+        Kontakt →
       </a>
       <p className="mt-5 text-xs text-ink-muted">Aktuell verfügbar · remote im DACH-Raum</p>
     </header>
@@ -241,13 +241,7 @@ function Contact() {
         <p className="mt-6 text-lg text-ink-muted">
           Projektphase und gewünschte Unterstützung genügen für eine erste Einschätzung.
         </p>
-        <a
-          href="mailto:info@schetti.com?subject=Projektanfrage%20%C3%BCber%20schetti.com"
-          className="mt-9 inline-flex items-center bg-ink px-8 py-4 font-display font-medium tracking-wide text-background transition hover:bg-accent"
-        >
-          Projekt unverbindlich anfragen
-        </a>
-        <p className="mt-4 text-sm text-ink-muted">info@schetti.com</p>
+        <ContactLinks emailSubject="Projektanfrage über schetti.com" />
         <p className="mt-5 text-xs text-ink-muted">Aktuell verfügbar · remote im DACH-Raum</p>
       </div>
     </section>
