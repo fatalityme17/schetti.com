@@ -8,7 +8,7 @@ export const Route = createFileRoute("/ru")({
       {
         name: "description",
         content:
-          "Профессиональное присутствие малого бизнеса в интернете: сайт, профиль компании в Google, WhatsApp Business и понятные способы связи.",
+          "Профессиональное присутствие в интернете, понятная ИТ-помощь и фирменный стиль для малого бизнеса.",
       },
       {
         property: "og:title",
@@ -55,8 +55,8 @@ function Hero() {
       </h1>
       <p className="mt-8 max-w-2xl text-lg font-light leading-relaxed text-ink-muted md:text-xl">
         Я создаю профессиональное цифровое присутствие: сайт, профиль компании в Google, WhatsApp
-        Business и понятные способы связи. Так вас смогут найти и выбрать люди, которые сначала ищут
-        и сравнивают услуги онлайн.
+        Business и понятные способы связи. Вы рассказываете, чего хотите добиться, а я без сложных
+        терминов подбираю и реализую подходящее решение.
       </p>
       <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm">
         <a
@@ -153,17 +153,21 @@ function Starter() {
           <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-ink-muted">
             Можно дополнить
           </p>
-          <div className="mt-4 grid gap-4 text-sm md:grid-cols-3">
+          <div className="mt-4 grid gap-4 text-sm md:grid-cols-2 lg:grid-cols-4">
             <div>
               <span className="font-semibold text-ink">Фирменный стиль</span>
               <span className="ml-2 text-accent">+ 290 €</span>
+            </div>
+            <div>
+              <span className="font-semibold text-ink">Визитки и флаеры</span>
+              <span className="ml-2 text-accent">по запросу</span>
             </div>
             <div>
               <span className="font-semibold text-ink">ИИ-ассистент / автоматизация</span>
               <span className="ml-2 text-accent">от 390 €</span>
             </div>
             <div>
-              <span className="font-semibold text-ink">Пакет сопровождения</span>
+              <span className="font-semibold text-ink">ИТ-помощь и сопровождение</span>
               <span className="ml-2 text-accent">от 39 €/час</span>
             </div>
           </div>
@@ -219,6 +223,10 @@ function About() {
           Меня зовут Ольга Щетти. Я инженер в области информационных технологий. Соединяю
           технические знания с опытом цифровизации и ИТ-проектов, чтобы малый бизнес профессионально
           выглядел в интернете и становился заметнее для новой цифровой аудитории.
+        </p>
+        <p className="mt-4">
+          ИТ не должно пугать. Я объясняю возможности без сложных терминов и помогаю с другими
+          ИТ-задачами — практично и в соответствии с реальными потребностями бизнеса.
         </p>
         <p className="mt-4 text-sm">
           Право использовать профессиональное наименование Ingenieurin признано в земле Северный

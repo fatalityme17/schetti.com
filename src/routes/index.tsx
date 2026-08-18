@@ -8,7 +8,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Professioneller Online-Auftritt für kleine Unternehmen: Website, Google-Unternehmensprofil, WhatsApp Business und klare Kontaktwege.",
+          "Professioneller Online-Auftritt, verständliche IT-Hilfe und Corporate Design für kleine Unternehmen.",
       },
       {
         property: "og:title",
@@ -56,8 +56,8 @@ function Hero() {
       </h1>
       <p className="mt-8 max-w-2xl text-lg font-light leading-relaxed text-ink-muted md:text-xl">
         Ich bringe Ihr Unternehmen professionell ins Internet — mit Website,
-        Google-Unternehmensprofil, WhatsApp Business und klaren Kontaktwegen. So erreichen Sie auch
-        Menschen, die Anbieter zuerst online suchen und vergleichen.
+        Google-Unternehmensprofil, WhatsApp Business und klaren Kontaktwegen. Sie sagen, was Sie
+        erreichen möchten; ich finde die passende Lösung und setze sie verständlich um.
       </p>
       <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm">
         <a
@@ -152,17 +152,21 @@ function Starter() {
           <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-ink-muted">
             Modular erweiterbar
           </p>
-          <div className="mt-4 grid gap-4 text-sm md:grid-cols-3">
+          <div className="mt-4 grid gap-4 text-sm md:grid-cols-2 lg:grid-cols-4">
             <div>
               <span className="font-semibold text-ink">Corporate Design</span>
               <span className="ml-2 text-accent">+ 290 €</span>
+            </div>
+            <div>
+              <span className="font-semibold text-ink">Visitenkarten & Flyer</span>
+              <span className="ml-2 text-accent">auf Anfrage</span>
             </div>
             <div>
               <span className="font-semibold text-ink">KI-Assistent / Automatisierung</span>
               <span className="ml-2 text-accent">ab 390 €</span>
             </div>
             <div>
-              <span className="font-semibold text-ink">Care-Paket</span>
+              <span className="font-semibold text-ink">IT-Hilfe & Betreuung</span>
               <span className="ml-2 text-accent">ab 39 €/Stunde</span>
             </div>
           </div>
@@ -219,6 +223,10 @@ function About() {
           Verständnis mit Erfahrung in Digitalisierung und IT-Projekten — damit kleine Unternehmen
           professionell im Internet auftreten und auch eine digital orientierte Kundschaft
           erreichen.
+        </p>
+        <p className="mt-4">
+          IT muss sich nicht kompliziert anfühlen. Ich erkläre Möglichkeiten ohne Fachsprache und
+          helfe auch bei weiteren IT-Themen — pragmatisch und passend zu Ihrem tatsächlichen Bedarf.
         </p>
         <p className="mt-4 text-sm">
           Die Berechtigung zum Führen der Berufsbezeichnung Ingenieurin wurde in Nordrhein-Westfalen
