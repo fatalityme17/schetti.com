@@ -120,7 +120,7 @@ function Starter() {
         <div className="grid gap-10 md:grid-cols-[1fr_2fr] md:gap-16">
           <div>
             <h2 className="font-display text-3xl font-bold tracking-tight text-ink md:text-4xl">
-              Ваш бизнес заметен онлайн за одну неделю.
+              Ваш бизнес заметен онлайн — понятно и профессионально.
             </h2>
             <p className="mt-6 font-display text-5xl font-bold text-ink md:text-6xl">490 €</p>
             <p className="mt-2 text-sm text-ink-muted">
@@ -164,7 +164,7 @@ function Starter() {
             </div>
             <div>
               <span className="font-semibold text-ink">Пакет сопровождения</span>
-              <span className="ml-2 text-accent">от 39 €/месяц</span>
+              <span className="ml-2 text-accent">от 39 €/час</span>
             </div>
           </div>
         </div>
