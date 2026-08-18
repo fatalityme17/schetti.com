@@ -40,7 +40,7 @@ export function SiteHeader() {
             {isRussian ? "Ольга Щетти" : "Olga Schetti"}
           </span>
           <span className="hidden text-[9px] font-semibold uppercase tracking-[0.18em] text-ink-muted lg:inline">
-            {isRussian ? "Цифровая инфраструктура" : "Digitale Infrastruktur"}
+            {isRussian ? "— ИТ-фрилансер" : "— IT-Freiberuflerin"}
           </span>
         </a>
         <nav className="hidden items-center gap-5 text-sm text-ink-muted md:flex lg:gap-8">
