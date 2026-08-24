@@ -8,6 +8,7 @@ import {
   FolderOpen,
   GearSix,
   IdentificationCard,
+  List,
   PaintBrush,
   PaperPlaneTilt,
   Phone,
@@ -221,6 +222,19 @@ export function EditorialHome({ language }: { language: Language }) {
               </a>
             </nav>
           </div>
+          <details className="paper-mobile-menu">
+            <summary aria-label={isRussian ? "Открыть меню" : "Menü öffnen"}>
+              <List size={28} weight="regular" aria-hidden="true" />
+            </summary>
+            <nav aria-label={isRussian ? "Мобильная навигация" : "Mobile Navigation"}>
+              {t.nav.map(([href, label]) => (
+                <a href={href} key={href}>
+                  {label}
+                </a>
+              ))}
+              <a href={t.agencyHref}>{t.agency}</a>
+            </nav>
+          </details>
         </header>
 
         <main className="paper-site-main">
@@ -255,7 +269,7 @@ export function EditorialHome({ language }: { language: Language }) {
             </div>
           </section>
 
-          <div className="paper-offer-process">
+          <div className="paper-offer-process-services">
             <section id="starter" className="paper-offer scroll-mt-24">
               <div className="paper-label">{t.offerLabel}</div>
               <h2>{t.offerTitle}</h2>
@@ -295,27 +309,26 @@ export function EditorialHome({ language }: { language: Language }) {
                 })}
               </div>
             </section>
+            <section className="paper-services">
+              <div className="paper-services-copy">
+                <h2>{t.servicesTitle}</h2>
+                <p>{t.servicesIntro}</p>
+                <blockquote className="olga-hand">{t.servicesNote}</blockquote>
+              </div>
+              <div className="paper-service-slips">
+                {t.services.map(([name, price], index) => {
+                  const Icon = serviceIcons[index];
+                  return (
+                    <article key={name}>
+                      <Icon size={22} weight="thin" aria-hidden="true" />
+                      <span>{name}</span>
+                      <strong>{price}</strong>
+                    </article>
+                  );
+                })}
+              </div>
+            </section>
           </div>
-
-          <section className="paper-services">
-            <div className="paper-services-copy">
-              <h2>{t.servicesTitle}</h2>
-              <p>{t.servicesIntro}</p>
-              <blockquote className="olga-hand">{t.servicesNote}</blockquote>
-            </div>
-            <div className="paper-service-slips">
-              {t.services.map(([name, price], index) => {
-                const Icon = serviceIcons[index];
-                return (
-                  <article key={name}>
-                    <Icon size={24} weight="thin" aria-hidden="true" />
-                    <span>{name}</span>
-                    <strong>{price}</strong>
-                  </article>
-                );
-              })}
-            </div>
-          </section>
 
           <div className="paper-closing">
             <section id="ueber-mich" className="paper-about scroll-mt-24">

@@ -22,7 +22,7 @@
       "headline": { "displayName": "Editorial Headline", "purpose": "Major section promises and closing questions." },
       "body": { "displayName": "Practical Body", "purpose": "Explanations, scope, legal details, and contact information in German and Russian." },
       "label": { "displayName": "Utility Label", "purpose": "Navigation, worksheet titles, and section markers." },
-      "handwritten": { "displayName": "Olga Handwriting", "purpose": "Short authored notes, process verbs, and price marks." }
+      "handwritten": { "displayName": "Approved Handwriting", "purpose": "Short authored notes, process verbs, and price marks." }
     },
     "shadows": [
       { "name": "outer-sheet", "value": "0 2rem 5rem rgb(65 34 18 / 0.14)", "purpose": "Broad warm depth around the centered editorial page." },
@@ -53,7 +53,7 @@
       "refersTo": "note-cta",
       "description": "A handwritten cream note for the direct package invitation.",
       "html": "<a class=\"ds-note-cta\" href=\"#\">Kurz erzählen, was Sie brauchen <span aria-hidden=\"true\">→</span></a>",
-      "css": ".ds-note-cta{display:inline-flex;align-items:center;justify-content:space-between;gap:1.4rem;padding:.9rem 1.2rem;background:#fff8e9;color:#2b1720;font-family:'Olga Handwriting','Segoe Print',cursive;font-size:1.12rem;text-decoration:none;box-shadow:0 .7rem 1.5rem rgb(72 26 10 / .16);transition:transform 180ms ease,background-color 180ms ease}.ds-note-cta:hover{background:#fffdf7;transform:translateY(-2px) rotate(-.35deg)}.ds-note-cta:active{transform:translateY(1px)}.ds-note-cta:focus-visible{outline:3px solid color-mix(in srgb,#8b5a2b 76%,white);outline-offset:4px}"
+      "css": ".ds-note-cta{display:inline-flex;align-items:center;justify-content:space-between;gap:1.4rem;padding:.9rem 1.2rem;background:#fff8e9;color:#2b1720;font-family:'Caveat Variable','Segoe Print',cursive;font-size:1.35rem;text-decoration:none;box-shadow:0 .7rem 1.5rem rgb(72 26 10 / .16);transition:transform 180ms ease,background-color 180ms ease}.ds-note-cta:hover{background:#fffdf7;transform:translateY(-2px) rotate(-.35deg)}.ds-note-cta:active{transform:translateY(1px)}.ds-note-cta:focus-visible{outline:3px solid color-mix(in srgb,#8b5a2b 76%,white);outline-offset:4px}"
     },
     {
       "name": "Taped Worksheet",
@@ -68,7 +68,7 @@
       "kind": "custom",
       "description": "A hand-numbered process unit with a practical explanation.",
       "html": "<article class=\"ds-process\"><span>1</span><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 6.5h14v9H9l-4 3v-12Z\" fill=\"none\" stroke=\"currentColor\"/></svg><h3>Klären.</h3><p>Sie erzählen, ich stelle die richtigen Fragen.</p></article>",
-      "css": ".ds-process{max-width:13rem;color:#2b1720;font-family:'Manrope Variable',Manrope,sans-serif}.ds-process>span{display:grid;place-items:center;width:2.35rem;height:2.2rem;border:1.5px solid currentColor;border-radius:49% 53% 48% 55%;font-family:'Olga Handwriting','Segoe Print',cursive;font-size:1.15rem}.ds-process svg{width:2.35rem;margin-top:1.5rem}.ds-process h3{margin:.65rem 0 0;font-family:'Olga Handwriting','Segoe Print',cursive;font-size:1.35rem}.ds-process p{margin:.8rem 0 0;font-size:.74rem;line-height:1.5}"
+      "css": ".ds-process{max-width:13rem;color:#2b1720;font-family:'Manrope Variable',Manrope,sans-serif}.ds-process>span{display:grid;place-items:center;width:2.35rem;height:2.2rem;border:1.5px solid currentColor;border-radius:49% 53% 48% 55%;font-family:'Caveat Variable','Segoe Print',cursive;font-size:1.15rem}.ds-process svg{width:2.35rem;margin-top:1.5rem}.ds-process h3{margin:.65rem 0 0;font-family:'Caveat Variable','Segoe Print',cursive;font-size:1.35rem}.ds-process p{margin:.8rem 0 0;font-size:.74rem;line-height:1.5}"
     },
     {
       "name": "Service Slip",
@@ -90,13 +90,13 @@
   "narrative": {
     "northStar": "The Prepared Worktable",
     "overview": "The visual world feels like Olga has already cleared a warm worktable and prepared the first useful documents for the visitor. Cream paper, cognac cover stock, dark plum ink, real handwriting, tape, pen sketches, slight rotations, and soft contact shadows make the service personal without making it improvised. Structure remains exact beneath the material warmth: offer, price, process, credentials, and contact paths are always easy to scan.\n\nThis is an authored editorial system, not a photographed lifestyle brand and not a polished SaaS template. The human marks explain, underline, price, or reassure; they never become decorative noise. German and Russian routes use the same hierarchy, materials, affordances, and content density.",
-    "keyCharacteristics": ["Warm cream paper against cognac and plum color fields", "Real Olga handwriting used as a human annotation layer", "Square-edged documents with tape, pen marks, and restrained physical depth", "Large editorial serif headlines paired with compact Manrope utility text", "Clear website-first offer and direct contact paths", "No photography; illustrations are diagrammatic worksheet sketches"],
+    "keyCharacteristics": ["Warm cream paper against cognac and plum color fields", "Thin Caveat lettering from the approved comps used as a human annotation layer", "Square-edged documents with tape, pen marks, and restrained physical depth", "Large editorial serif headlines paired with compact Manrope utility text", "Clear website-first offer and direct contact paths", "No photography; illustrations are diagrammatic worksheet sketches"],
     "rules": [
       { "name": "The Ink, Not Black Rule", "body": "Use dark plum wherever a generic interface would reach for pure black.", "section": "colors" },
       { "name": "The Cognac Closing Rule", "body": "Direct contact belongs on cognac with cream text; the closing action should feel unmistakable without introducing a new color.", "section": "colors" },
       { "name": "The Sparse Marker Rule", "body": "Olive, lime, blue pen, and tape are annotations, not competing brand colors.", "section": "colors" },
       { "name": "The Three Voices Rule", "body": "Serif persuades, sans-serif explains, and handwriting makes a personal mark; do not blur those jobs.", "section": "typography" },
-      { "name": "The Real Hand Rule", "body": "Use the supplied Olga Handwriting font for authored marks. Never substitute a generic script when the asset is available.", "section": "typography" },
+      { "name": "The Approved Hand Rule", "body": "Use Caveat Variable for authored marks so the implemented site matches the approved desktop and mobile comps.", "section": "typography" },
       { "name": "The Worktable-to-Document Rule", "body": "Desktop may feel like a composed table of artifacts; mobile must become a clean reading stack, never a squeezed miniature collage.", "section": "layout" },
       { "name": "The Parity Rule", "body": "German and Russian routes keep equivalent hierarchy, component order, responsive behavior, and visual emphasis even when line lengths differ.", "section": "layout" },
       { "name": "The Physical Cause Rule", "body": "A shadow must explain why paper sits above another surface. Flat editorial color blocks remain flat.", "section": "elevation" },

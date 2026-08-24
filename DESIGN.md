@@ -40,7 +40,7 @@ typography:
     lineHeight: 1.2
     letterSpacing: "0.11em"
   handwritten:
-    fontFamily: "Olga Handwriting, 'Segoe Print', cursive"
+    fontFamily: "Caveat Variable, 'Segoe Print', cursive"
     fontSize: "clamp(1.8rem, 3vw, 2.8rem)"
     fontWeight: 400
     lineHeight: 1.1
@@ -92,7 +92,7 @@ This is an authored editorial system, not a photographed lifestyle brand and not
 **Key Characteristics:**
 
 - Warm cream paper against cognac and plum color fields
-- Real Olga handwriting used as a human annotation layer
+- Thin handwritten lettering from the approved comps used as a human annotation layer
 - Square-edged documents with tape, pen marks, and restrained physical depth
 - Large editorial serif headlines paired with compact Manrope utility text
 - Clear website-first offer and direct contact paths
@@ -135,9 +135,9 @@ The palette combines edible paper warmth with two decisive inks: cognac for acti
 
 **Display Font:** Georgia (with Times New Roman and serif fallbacks)  
 **Body Font:** Manrope Variable (with Manrope and system sans-serif fallbacks)  
-**Handwritten Font:** Olga Handwriting (with Segoe Print and cursive fallbacks)
+**Handwritten Font:** Caveat Variable (with Segoe Print and cursive fallbacks)
 
-**Character:** Georgia provides an assured editorial voice, Manrope keeps practical details clean in both Latin and Cyrillic, and Olga's actual handwriting supplies personal emphasis. The three voices must remain visibly distinct.
+**Character:** Georgia provides an assured editorial voice, Manrope keeps practical details clean in both Latin and Cyrillic, and the thin Caveat lettering approved in the desktop and mobile comps supplies personal emphasis. The three voices must remain visibly distinct.
 
 ### Hierarchy
 
@@ -145,13 +145,13 @@ The palette combines edible paper warmth with two decisive inks: cognac for acti
 - **Headline:** Editorial serif for major section promises and the closing question. Keep lines short enough to preserve their poster-like rhythm.
 - **Body:** Manrope for explanation, scope, legal detail, metadata, and contact information. Comfortable reading copy stays around 52–64 characters per line where the composition allows it.
 - **Label:** Small, bold, widely tracked uppercase Manrope for navigation, worksheet titles, and section markers.
-- **Handwritten:** Olga Handwriting for one-line reassurance, process verbs, the price seal, and concise notes—not for paragraphs or essential legal detail.
+- **Handwritten:** Caveat Variable for one-line reassurance, process verbs, the price seal, and concise notes—not for paragraphs or essential legal detail.
 
 ### Named Rules
 
 **The Three Voices Rule.** Serif persuades, sans-serif explains, and handwriting makes a personal mark; do not blur those jobs.
 
-**The Real Hand Rule.** Use the supplied Olga Handwriting font for authored marks. Never substitute a generic script when the asset is available.
+**The Approved Hand Rule.** Use Caveat Variable for authored marks so the implemented site matches the approved comps in German and Russian. Do not substitute the previously generated handwriting font.
 
 ## Layout
 
@@ -199,7 +199,7 @@ Most structural surfaces are square-edged. Character comes from imperfect paper 
 
 ### Note CTA
 
-- **Shape:** A square cream note with Olga Handwriting and a directional arrow.
+- **Shape:** A square cream note with Caveat Variable lettering and a directional arrow.
 - **States:** Hover lifts the note by 2px, warms the cream, and introduces a fraction of rotation; active presses it down by 1px. Reduced-motion removes the transition.
 - **Use:** The package CTA only, or another equally direct invitation written in Olga's voice.
 
