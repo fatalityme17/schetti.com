@@ -40,7 +40,7 @@ export function SiteHeader() {
             {isRussian ? "Ольга Щетти" : "Olga Schetti"}
           </span>
           <span className="hidden text-[9px] font-semibold uppercase tracking-[0.18em] text-ink-muted lg:inline">
-            {isRussian ? "— ИТ-фрилансер" : "— IT-Freiberuflerin"}
+            {isRussian ? "— ИТ-Фрилансер" : "— IT-Freiberuflerin"}
           </span>
         </a>
         <nav className="hidden items-center gap-5 text-sm text-ink-muted md:flex lg:gap-8">
@@ -136,7 +136,7 @@ export function SiteFooter() {
       <div className="container-page flex flex-col gap-4 py-10 text-sm text-ink-muted md:flex-row md:items-center md:justify-between">
         <div>
           <div className="font-display font-semibold text-ink">
-            {isRussian ? "Ольга Щетти" : "Olga Schetti"}
+            {isRussian ? "Ольга Щетти — ИТ-Фрилансер" : "Olga Schetti — IT-Freiberuflerin"}
           </div>
           <div className="mt-1 text-xs">Emmerich am Rhein · DACH remote</div>
         </div>
@@ -225,10 +225,16 @@ export function ContactLinks({
   );
 }
 
-export function Page({ children }: { children: ReactNode }) {
+export function Page({
+  children,
+  variant = "default",
+}: {
+  children: ReactNode;
+  variant?: "default" | "folder";
+}) {
   return (
-    <div className="flex min-h-screen flex-col bg-background text-ink">
-      <SiteHeader />
+    <div className="flex min-h-[100dvh] flex-col bg-background text-ink">
+      {variant === "default" ? <SiteHeader /> : null}
       <main className="flex-1">{children}</main>
       <SiteFooter />
     </div>

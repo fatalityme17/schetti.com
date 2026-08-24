@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-24T16:13:02.8064986+02:00",
+  "title": "Design System: Olga Schetti",
+  "extensions": {
+    "colorMeta": {
+      "paper-cream": { "role": "neutral", "displayName": "Paper Cream", "canonical": "#fff8e9", "tonalRamp": ["oklch(20% 0.018 85)", "oklch(31% 0.021 85)", "oklch(43% 0.023 85)", "oklch(56% 0.025 85)", "oklch(68% 0.026 85)", "oklch(79% 0.027 85)", "oklch(89% 0.028 85)", "oklch(97% 0.028 85)"] },
+      "paper-soft": { "role": "neutral", "displayName": "Paper Soft", "canonical": "#f4eee6", "tonalRamp": ["oklch(18% 0.012 70)", "oklch(30% 0.014 70)", "oklch(42% 0.015 70)", "oklch(55% 0.016 70)", "oklch(67% 0.017 70)", "oklch(79% 0.018 70)", "oklch(89% 0.018 70)", "oklch(95% 0.018 70)"] },
+      "paper-about": { "role": "neutral", "displayName": "About Paper", "canonical": "#eee1c9", "tonalRamp": ["oklch(18% 0.03 80)", "oklch(30% 0.034 80)", "oklch(42% 0.038 80)", "oklch(55% 0.041 80)", "oklch(67% 0.044 80)", "oklch(78% 0.046 80)", "oklch(88% 0.047 80)", "oklch(93% 0.047 80)"] },
+      "cognac-strip": { "role": "primary", "displayName": "Cognac Strip", "canonical": "#a94720", "tonalRamp": ["oklch(20% 0.09 44)", "oklch(30% 0.12 44)", "oklch(41% 0.15 44)", "oklch(52% 0.17 44)", "oklch(63% 0.15 44)", "oklch(74% 0.11 44)", "oklch(85% 0.07 44)", "oklch(94% 0.03 44)"] },
+      "brown-accent": { "role": "secondary", "displayName": "Brown Accent", "canonical": "#8b5a2b", "tonalRamp": ["oklch(19% 0.055 65)", "oklch(29% 0.075 65)", "oklch(40% 0.092 65)", "oklch(51% 0.1 65)", "oklch(63% 0.085 65)", "oklch(74% 0.065 65)", "oklch(85% 0.04 65)", "oklch(94% 0.02 65)"] },
+      "dark-plum-ink": { "role": "neutral", "displayName": "Dark Plum Ink", "canonical": "#2b1720", "tonalRamp": ["oklch(17% 0.04 350)", "oklch(27% 0.05 350)", "oklch(39% 0.055 350)", "oklch(51% 0.052 350)", "oklch(63% 0.045 350)", "oklch(75% 0.034 350)", "oklch(86% 0.022 350)", "oklch(95% 0.01 350)"] },
+      "deep-plum": { "role": "neutral", "displayName": "Deep Plum", "canonical": "#321c25", "tonalRamp": ["oklch(18% 0.04 350)", "oklch(28% 0.05 350)", "oklch(40% 0.056 350)", "oklch(52% 0.052 350)", "oklch(64% 0.044 350)", "oklch(76% 0.033 350)", "oklch(87% 0.021 350)", "oklch(95% 0.01 350)"] },
+      "quiet-brown": { "role": "neutral", "displayName": "Quiet Brown", "canonical": "#5e4b43", "tonalRamp": ["oklch(18% 0.02 45)", "oklch(29% 0.027 45)", "oklch(40% 0.032 45)", "oklch(52% 0.034 45)", "oklch(64% 0.03 45)", "oklch(75% 0.024 45)", "oklch(86% 0.016 45)", "oklch(95% 0.008 45)"] },
+      "olive-mark": { "role": "secondary", "displayName": "Olive Mark", "canonical": "#52613b", "tonalRamp": ["oklch(19% 0.04 125)", "oklch(30% 0.06 125)", "oklch(41% 0.075 125)", "oklch(53% 0.08 125)", "oklch(64% 0.07 125)", "oklch(75% 0.055 125)", "oklch(86% 0.035 125)", "oklch(95% 0.016 125)"] },
+      "lime-note": { "role": "tertiary", "displayName": "Lime Note", "canonical": "#c4c98c", "tonalRamp": ["oklch(20% 0.045 110)", "oklch(31% 0.065 110)", "oklch(43% 0.085 110)", "oklch(55% 0.1 110)", "oklch(67% 0.105 110)", "oklch(77% 0.1 110)", "oklch(86% 0.075 110)", "oklch(95% 0.03 110)"] },
+      "blue-pen": { "role": "tertiary", "displayName": "Blue Pen", "canonical": "#283559", "tonalRamp": ["oklch(18% 0.05 265)", "oklch(29% 0.075 265)", "oklch(40% 0.095 265)", "oklch(52% 0.105 265)", "oklch(64% 0.09 265)", "oklch(75% 0.065 265)", "oklch(86% 0.04 265)", "oklch(95% 0.018 265)"] },
+      "tape-beige": { "role": "neutral", "displayName": "Tape Beige", "canonical": "rgb(224 210 178 / 0.78)", "tonalRamp": ["oklch(19% 0.03 85)", "oklch(31% 0.04 85)", "oklch(43% 0.05 85)", "oklch(55% 0.06 85)", "oklch(67% 0.065 85)", "oklch(78% 0.06 85)", "oklch(87% 0.045 85)", "oklch(95% 0.02 85)"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Editorial Display", "purpose": "The home hero promise only." },
+      "headline": { "displayName": "Editorial Headline", "purpose": "Major section promises and closing questions." },
+      "body": { "displayName": "Practical Body", "purpose": "Explanations, scope, legal details, and contact information in German and Russian." },
+      "label": { "displayName": "Utility Label", "purpose": "Navigation, worksheet titles, and section markers." },
+      "handwritten": { "displayName": "Olga Handwriting", "purpose": "Short authored notes, process verbs, and price marks." }
+    },
+    "shadows": [
+      { "name": "outer-sheet", "value": "0 2rem 5rem rgb(65 34 18 / 0.14)", "purpose": "Broad warm depth around the centered editorial page." },
+      { "name": "worksheet-lift", "value": "0 1.2rem 2rem rgb(57 29 16 / 0.22)", "purpose": "Makes taped worksheets sit above the cognac workboard." },
+      { "name": "slip-contact", "value": "0 0.7rem 1.2rem rgb(12 5 8 / 0.2)", "purpose": "Short physical contact shadow beneath service slips." },
+      { "name": "note-contact", "value": "0 0.7rem 1.5rem rgb(72 26 10 / 0.16)", "purpose": "Lift beneath the handwritten cream CTA note." }
+    ],
+    "motion": [
+      { "name": "paper-state", "value": "180ms ease", "purpose": "Short lift and press feedback for actionable paper elements; removed for reduced motion." }
+    ],
+    "breakpoints": [
+      { "name": "desktop-tight", "value": "1120px" },
+      { "name": "document-stack", "value": "820px" },
+      { "name": "phone", "value": "480px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Language Switcher",
+      "kind": "nav",
+      "description": "Compact bordered DE/RU selector with a plum current state.",
+      "html": "<nav class=\"ds-language\" aria-label=\"Sprachauswahl\"><a class=\"ds-language-current\" href=\"#\">DE</a><a href=\"#\">RU</a></nav>",
+      "css": ".ds-language{display:inline-flex;border:1px solid rgb(61 37 30 / .3);font-family:'Manrope Variable',Manrope,sans-serif;font-size:.66rem;font-weight:800}.ds-language a{padding:.42rem .5rem;color:#2b1720;text-decoration:none}.ds-language-current{background:#321c25;color:#fff8e9!important}.ds-language a:hover{color:#a94720}.ds-language a:focus-visible{outline:3px solid color-mix(in srgb,#8b5a2b 76%,white);outline-offset:4px}"
+    },
+    {
+      "name": "Note CTA",
+      "kind": "button",
+      "refersTo": "note-cta",
+      "description": "A handwritten cream note for the direct package invitation.",
+      "html": "<a class=\"ds-note-cta\" href=\"#\">Kurz erzählen, was Sie brauchen <span aria-hidden=\"true\">→</span></a>",
+      "css": ".ds-note-cta{display:inline-flex;align-items:center;justify-content:space-between;gap:1.4rem;padding:.9rem 1.2rem;background:#fff8e9;color:#2b1720;font-family:'Olga Handwriting','Segoe Print',cursive;font-size:1.12rem;text-decoration:none;box-shadow:0 .7rem 1.5rem rgb(72 26 10 / .16);transition:transform 180ms ease,background-color 180ms ease}.ds-note-cta:hover{background:#fffdf7;transform:translateY(-2px) rotate(-.35deg)}.ds-note-cta:active{transform:translateY(1px)}.ds-note-cta:focus-visible{outline:3px solid color-mix(in srgb,#8b5a2b 76%,white);outline-offset:4px}"
+    },
+    {
+      "name": "Taped Worksheet",
+      "kind": "card",
+      "refersTo": "worksheet",
+      "description": "A square cream project sheet with tape, pen marks, and a small index.",
+      "html": "<article class=\"ds-worksheet\"><span class=\"ds-tape\" aria-hidden=\"true\"></span><h3>IHRE WEBSITE</h3><div class=\"ds-sketch\" aria-hidden=\"true\"></div><small>01</small></article>",
+      "css": ".ds-worksheet{position:relative;min-height:14rem;padding:2.5rem 1.35rem 1.3rem;background:#fff8e9;color:#2b1720;font-family:'Manrope Variable',Manrope,sans-serif;box-shadow:0 1.2rem 2rem rgb(57 29 16 / .22);transform:rotate(-1.5deg)}.ds-worksheet h3{font-size:.73rem;letter-spacing:.06em}.ds-tape{position:absolute;top:-.65rem;left:50%;width:5.2rem;height:1.35rem;background:rgb(224 210 178 / .78);transform:translateX(-50%) rotate(-2deg)}.ds-sketch{height:7rem;margin-top:1.2rem;border:1.5px solid #283559;background:linear-gradient(34deg,transparent 49.5%,#283559 50%,transparent 50.5%)}.ds-worksheet small{position:absolute;right:1rem;bottom:.75rem;letter-spacing:.12em;opacity:.55}"
+    },
+    {
+      "name": "Process Step",
+      "kind": "custom",
+      "description": "A hand-numbered process unit with a practical explanation.",
+      "html": "<article class=\"ds-process\"><span>1</span><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 6.5h14v9H9l-4 3v-12Z\" fill=\"none\" stroke=\"currentColor\"/></svg><h3>Klären.</h3><p>Sie erzählen, ich stelle die richtigen Fragen.</p></article>",
+      "css": ".ds-process{max-width:13rem;color:#2b1720;font-family:'Manrope Variable',Manrope,sans-serif}.ds-process>span{display:grid;place-items:center;width:2.35rem;height:2.2rem;border:1.5px solid currentColor;border-radius:49% 53% 48% 55%;font-family:'Olga Handwriting','Segoe Print',cursive;font-size:1.15rem}.ds-process svg{width:2.35rem;margin-top:1.5rem}.ds-process h3{margin:.65rem 0 0;font-family:'Olga Handwriting','Segoe Print',cursive;font-size:1.35rem}.ds-process p{margin:.8rem 0 0;font-size:.74rem;line-height:1.5}"
+    },
+    {
+      "name": "Service Slip",
+      "kind": "card",
+      "refersTo": "service-slip",
+      "description": "A narrow paper row for an optional service and its price qualifier.",
+      "html": "<article class=\"ds-service-slip\"><span aria-hidden=\"true\">✦</span><span>Corporate Design</span><strong>+ 290 €</strong></article>",
+      "css": ".ds-service-slip{display:grid;grid-template-columns:2rem minmax(0,1fr) auto;align-items:center;gap:.8rem;min-height:3.6rem;padding:.7rem 1rem;background:#fff8e9;color:#2b1720;font-family:'Manrope Variable',Manrope,sans-serif;box-shadow:0 .7rem 1.2rem rgb(12 5 8 / .2);transform:rotate(-.45deg)}.ds-service-slip strong{color:#a94720;font-size:.72rem;text-align:right}"
+    },
+    {
+      "name": "Contact Action",
+      "kind": "button",
+      "refersTo": "contact-action",
+      "description": "Cream outlined contact row designed to live on the cognac closing block.",
+      "html": "<div class=\"ds-contact-ground\"><a class=\"ds-contact-action\" href=\"#\"><span aria-hidden=\"true\">✉</span><span>E-Mail schreiben<small>info@schetti.com</small></span></a></div>",
+      "css": ".ds-contact-ground{padding:1rem;background:#a94720}.ds-contact-action{display:flex;align-items:center;gap:.75rem;min-height:4.3rem;padding:.75rem .9rem;border:1px solid rgb(255 248 233 / .55);color:#fff8e9;font-family:'Manrope Variable',Manrope,sans-serif;text-decoration:none;transition:background-color 180ms ease,transform 180ms ease}.ds-contact-action:hover{background:rgb(255 248 233 / .12);transform:translateY(-2px)}.ds-contact-action:active{transform:translateY(1px)}.ds-contact-action:focus-visible{outline:3px solid color-mix(in srgb,#8b5a2b 76%,white);outline-offset:4px}.ds-contact-action>span:last-child{font-weight:750}.ds-contact-action small{display:block;margin-top:.18rem;font-size:.68rem;font-weight:400;opacity:.82}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Prepared Worktable",
+    "overview": "The visual world feels like Olga has already cleared a warm worktable and prepared the first useful documents for the visitor. Cream paper, cognac cover stock, dark plum ink, real handwriting, tape, pen sketches, slight rotations, and soft contact shadows make the service personal without making it improvised. Structure remains exact beneath the material warmth: offer, price, process, credentials, and contact paths are always easy to scan.\n\nThis is an authored editorial system, not a photographed lifestyle brand and not a polished SaaS template. The human marks explain, underline, price, or reassure; they never become decorative noise. German and Russian routes use the same hierarchy, materials, affordances, and content density.",
+    "keyCharacteristics": ["Warm cream paper against cognac and plum color fields", "Real Olga handwriting used as a human annotation layer", "Square-edged documents with tape, pen marks, and restrained physical depth", "Large editorial serif headlines paired with compact Manrope utility text", "Clear website-first offer and direct contact paths", "No photography; illustrations are diagrammatic worksheet sketches"],
+    "rules": [
+      { "name": "The Ink, Not Black Rule", "body": "Use dark plum wherever a generic interface would reach for pure black.", "section": "colors" },
+      { "name": "The Cognac Closing Rule", "body": "Direct contact belongs on cognac with cream text; the closing action should feel unmistakable without introducing a new color.", "section": "colors" },
+      { "name": "The Sparse Marker Rule", "body": "Olive, lime, blue pen, and tape are annotations, not competing brand colors.", "section": "colors" },
+      { "name": "The Three Voices Rule", "body": "Serif persuades, sans-serif explains, and handwriting makes a personal mark; do not blur those jobs.", "section": "typography" },
+      { "name": "The Real Hand Rule", "body": "Use the supplied Olga Handwriting font for authored marks. Never substitute a generic script when the asset is available.", "section": "typography" },
+      { "name": "The Worktable-to-Document Rule", "body": "Desktop may feel like a composed table of artifacts; mobile must become a clean reading stack, never a squeezed miniature collage.", "section": "layout" },
+      { "name": "The Parity Rule", "body": "German and Russian routes keep equivalent hierarchy, component order, responsive behavior, and visual emphasis even when line lengths differ.", "section": "layout" },
+      { "name": "The Physical Cause Rule", "body": "A shadow must explain why paper sits above another surface. Flat editorial color blocks remain flat.", "section": "elevation" },
+      { "name": "The Imperfect Accent Rule", "body": "Irregularity belongs to highlights, seals, notes, and loose sheets; grids, navigation, and reading columns stay precise.", "section": "shapes" }
+    ],
+    "dos": ["Do make the website-first offer, price, scope, and next action visually concrete before introducing optional services.", "Do use real handwriting as brief functional annotation and preserve the editorial/sans/handwritten role split.", "Do keep the warm cream, cognac, and dark plum world consistent across German and Russian routes.", "Do turn asymmetric desktop compositions into a clear single-column document on mobile.", "Do use worksheet sketches, tape, paper grain, and physical shadows to express process without photography."],
+    "donts": ["Don't introduce photography, portraits, stock storefronts, testimonials, logos, or fabricated proof into this visual world.", "Don't convert the system into rounded SaaS cards, gradient blobs, glass panels, or generic AI-consultancy visuals.", "Don't use handwriting for paragraphs, legal copy, or information that must be read precisely.", "Don't scatter rotations, tape, underlines, or accent colors over every element; authored imperfection needs quiet structure around it.", "Don't copy the homepage workboard-and-closing composition onto every route; reuse the system, not the page choreography."]
+  }
+}

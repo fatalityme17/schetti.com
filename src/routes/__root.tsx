@@ -74,7 +74,7 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Olga Schetti — IT-Freiberuflerin" },
+      { title: "Olga Schetti - IT-Freiberuflerin" },
       {
         name: "description",
         content:
@@ -83,7 +83,7 @@ export const Route = createRootRoute({
       { name: "author", content: "Olga Schetti" },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "Olga Schetti" },
-      { property: "og:title", content: "Olga Schetti — Digitale Präsenz & Business Analysis" },
+      { property: "og:title", content: "Olga Schetti - Digitale Präsenz & Business Analysis" },
       {
         property: "og:description",
         content:
@@ -92,9 +92,9 @@ export const Route = createRootRoute({
       { property: "og:image", content: "https://schetti.com/og.png" },
       { property: "og:image:width", content: "1728" },
       { property: "og:image:height", content: "910" },
-      { property: "og:image:alt", content: "Olga Schetti — Digital präsent. Klar aufgestellt." },
+      { property: "og:image:alt", content: "Olga Schetti - Digital präsent. Klar aufgestellt." },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Olga Schetti — Digitale Präsenz & Business Analysis" },
+      { name: "twitter:title", content: "Olga Schetti - Digitale Präsenz & Business Analysis" },
       {
         name: "twitter:description",
         content:
@@ -128,9 +128,16 @@ export const Route = createRootRoute({
 });
 
 function RootShell({ children }: { children: ReactNode }) {
-  const language = useRouterState({
-    select: (state) => (state.location.pathname.startsWith("/ru") ? "ru" : "de"),
-  });
+  const pathname = useRouterState({ select: (state) => state.location.pathname });
+  const language = pathname.startsWith("/ru") ? "ru" : "de";
+
+  const homeDesignContract = `<!--
+THESIS: Olga turns a confusing digital project into a clearly prepared, human handover folder.
+OWN-WORLD: Warm cream paper, cognac strips, dark plum ink, real handwritten lettering, taped worksheets and restrained pencil marks.
+STORY: Visitors understand the 490 € website foundation, inspect optional modules and services, meet Olga, then contact her directly.
+FIRST VIEWPORT: A short bilingual-ready promise and three practical project sheets establish clarity and authorship without synthetic photography.
+FORM: Responsive editorial paper collage approved by the client; desktop is an asymmetric worktable and mobile becomes a legible single-column folder.
+-->`;
 
   return (
     <html lang={language}>
@@ -138,6 +145,12 @@ function RootShell({ children }: { children: ReactNode }) {
         <HeadContent />
       </head>
       <body>
+        {pathname === "/" ? (
+          <template
+            data-design-contract="home"
+            dangerouslySetInnerHTML={{ __html: homeDesignContract }}
+          />
+        ) : null}
         {children}
         <Scripts />
       </body>
