@@ -7,7 +7,8 @@ import {
   GearSix,
   Headphones,
   List,
-  PaintBrush,
+  Monitor,
+  PencilSimple,
   PaperPlaneTilt,
   Phone,
   WhatsappLogo,
@@ -55,18 +56,18 @@ const copy = {
     offerItems: [
       "Onepage-Website",
       "Passende Module für Ihr Unternehmen",
-      "z. B. Google-Unternehmensprofil, WhatsApp Business oder Online-Terminbuchung",
+      "z. B. Google-Unternehmensprofil, WhatsApp Business, Online-Terminbuchung",
     ],
     price: "490 €",
     tax: "Gemäß § 19 UStG wird keine Umsatzsteuer berechnet.",
-    extras: "Hosting, Domain und kostenpflichtige Drittanbieter-Dienste werden separat berechnet.",
+    extras: "Hosting, Domain und weitere Leistungen werden separat berechnet.",
     cta: "Kurz erzählen.",
     processLabel: "ABLAUF",
     process: [
       ["Klären.", "Sie erzählen, ich stelle die richtigen Fragen."],
-      ["Planen.", "Wir ordnen Inhalte und setzen Prioritäten."],
-      ["Einrichten.", "Ich baue Ihre Lösung klar und responsiv."],
-      ["Übergeben.", "Sie erhalten alles erklärt und einsatzbereit."],
+      ["Planen.", "Wir klären das Wesentliche und setzen Prioritäten."],
+      ["Einrichten.", "Ich baue Ihre Lösung – klar, responsiv, DSGVO-konform."],
+      ["Übergeben.", "Sie sind online. Ich bleibe an Ihrer Seite."],
     ],
     servicesTitle: "Weitere Leistungen — wenn Sie sie brauchen.",
     servicesIntro:
@@ -199,8 +200,8 @@ const copy = {
   },
 } as const;
 
-const processIcons = [ChatsCircle, PaintBrush, GearSix, PaperPlaneTilt];
-const serviceIcons = [PaintBrush, GearSix, Headphones];
+const processIcons = [ChatsCircle, PencilSimple, Monitor, PaperPlaneTilt];
+const serviceIcons = [PencilSimple, GearSix, Headphones];
 
 export function EditorialHome({ language }: { language: Language }) {
   const t = copy[language];
@@ -305,7 +306,7 @@ export function EditorialHome({ language }: { language: Language }) {
                   </li>
                 ))}
               </ul>
-              <div className="paper-price olga-hand">{t.price}</div>
+              <div className="paper-price">{t.price}</div>
               <div className="paper-conditions">
                 <p>{t.tax}</p>
                 <p>{t.extras}</p>
@@ -446,20 +447,18 @@ function WebsiteSketch() {
 function StructureSketch() {
   return (
     <div className="structure-sketch" aria-hidden="true">
-      <div>
-        <span />
+      <div className="structure-copy">
         <i />
-        <i />
-      </div>
-      <div>
-        <span />
-        <i />
-      </div>
-      <div>
-        <span />
         <i />
         <i />
       </div>
+      {Array.from({ length: 4 }).map((_, index) => (
+        <div key={index}>
+          <span />
+          <i />
+          <i />
+        </div>
+      ))}
       <div className="structure-boxes">
         <b />
         <b />
