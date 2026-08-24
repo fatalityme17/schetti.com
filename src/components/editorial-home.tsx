@@ -5,11 +5,11 @@ import {
   Check,
   EnvelopeSimple,
   GearSix,
+  Headphones,
   List,
   PaintBrush,
   PaperPlaneTilt,
   Phone,
-  Robot,
   WhatsappLogo,
 } from "@phosphor-icons/react";
 import { Page } from "@/components/site-layout";
@@ -54,14 +54,13 @@ const copy = {
       "Wir klären gemeinsam, wie Sie Ihre Leistungen online präsentieren und welche Bausteine Sie wirklich brauchen.",
     offerItems: [
       "Onepage-Website",
-      "Beratung zu Ablauf, Inhalten und Präsentation",
       "Passende Module für Ihr Unternehmen",
       "z. B. Google-Unternehmensprofil, WhatsApp Business oder Online-Terminbuchung",
     ],
     price: "490 €",
     tax: "Gemäß § 19 UStG wird keine Umsatzsteuer berechnet.",
     extras: "Hosting, Domain und kostenpflichtige Drittanbieter-Dienste werden separat berechnet.",
-    cta: "Kurz erzählen, was Sie brauchen",
+    cta: "Kurz erzählen.",
     processLabel: "ABLAUF",
     process: [
       ["Klären.", "Sie erzählen, ich stelle die richtigen Fragen."],
@@ -141,14 +140,13 @@ const copy = {
       "Вместе определим, как представить ваши услуги онлайн и какие модули действительно нужны вашему бизнесу.",
     offerItems: [
       "Одностраничный сайт",
-      "Консультация по процессу, содержанию и подаче",
       "Подходящие модули для вашего бизнеса",
       "например, профиль Google, WhatsApp Business или онлайн-запись",
     ],
     price: "490 €",
     tax: "В соответствии с § 19 UStG налог на добавленную стоимость не начисляется.",
     extras: "Хостинг, домен и платные сервисы третьих сторон оплачиваются отдельно.",
-    cta: "Коротко рассказать о задаче",
+    cta: "Коротко рассказать.",
     processLabel: "КАК МЫ РАБОТАЕМ",
     process: [
       ["Обсуждаем.", "Вы рассказываете, я задаю правильные вопросы."],
@@ -202,7 +200,7 @@ const copy = {
 } as const;
 
 const processIcons = [ChatsCircle, PaintBrush, GearSix, PaperPlaneTilt];
-const serviceIcons = [PaintBrush, Robot, GearSix];
+const serviceIcons = [PaintBrush, GearSix, Headphones];
 
 export function EditorialHome({ language }: { language: Language }) {
   const t = copy[language];
@@ -250,6 +248,14 @@ export function EditorialHome({ language }: { language: Language }) {
                 </a>
               ))}
               <a href={t.agencyHref}>{t.agency}</a>
+              <span className="paper-mobile-languages">
+                <a href="/" lang="de" aria-current={!isRussian ? "page" : undefined}>
+                  DE
+                </a>
+                <a href="/ru" lang="ru" aria-current={isRussian ? "page" : undefined}>
+                  RU
+                </a>
+              </span>
             </nav>
           </details>
         </header>
