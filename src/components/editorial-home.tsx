@@ -1,20 +1,15 @@
 import {
   ArrowRight,
   Browser,
-  CalendarDots,
   ChatsCircle,
   Check,
   EnvelopeSimple,
-  FolderOpen,
   GearSix,
-  IdentificationCard,
   List,
   PaintBrush,
   PaperPlaneTilt,
   Phone,
   Robot,
-  Storefront,
-  Translate,
   WhatsappLogo,
 } from "@phosphor-icons/react";
 import { Page } from "@/components/site-layout";
@@ -77,14 +72,29 @@ const copy = {
     servicesTitle: "Weitere Leistungen — wenn Sie sie brauchen.",
     servicesIntro:
       "Der Schnellstart ist die Basis. Weitere Bausteine kommen nur dazu, wenn sie für Ihr Unternehmen sinnvoll sind.",
-    services: [
-      ["Corporate Design", "+ 290 €"],
-      ["Visitenkarten & Flyer", "auf Anfrage"],
-      ["KI-Assistent / Automatisierung", "ab 390 €"],
-      ["IT-Hilfe & Betreuung", "ab 39 €/Stunde"],
-      ["Mehrsprachige Websites", "nach Absprache"],
-      ["Einfache CRM-Lösungen", "nach Absprache"],
-      ["Individuelle IT-Projekte", "nach Absprache"],
+    serviceGroups: [
+      {
+        title: "Corporate Design & Print",
+        items: [
+          ["Corporate Design", "+ 290 €"],
+          ["Visitenkarten & Flyer", "auf Anfrage"],
+        ],
+      },
+      {
+        title: "Automatisierung & KI",
+        items: [
+          ["KI-Assistent / Automatisierung", "ab 390 €"],
+          ["Einfache CRM-Lösungen", "nach Absprache"],
+        ],
+      },
+      {
+        title: "Laufende IT-Hilfe",
+        items: [
+          ["IT-Hilfe & Betreuung", "ab 39 €/Stunde"],
+          ["Mehrsprachige Websites", "nach Absprache"],
+          ["Individuelle IT-Projekte", "nach Absprache"],
+        ],
+      },
     ],
     servicesNote: "Technik verstehen muss nicht Ihr Job sein. Meiner schon.",
     aboutTitle: "Technik verständlich umgesetzt.",
@@ -149,14 +159,29 @@ const copy = {
     servicesTitle: "Другие услуги — если они вам нужны.",
     servicesIntro:
       "Быстрый старт — это основа. Остальные модули добавляются только тогда, когда они полезны вашему бизнесу.",
-    services: [
-      ["Фирменный стиль", "+ 290 €"],
-      ["Визитки и флаеры", "по запросу"],
-      ["ИИ-ассистент / автоматизация", "от 390 €"],
-      ["ИТ-помощь и сопровождение", "от 39 €/час"],
-      ["Многоязычные сайты", "по договорённости"],
-      ["Простые CRM-решения", "по договорённости"],
-      ["Индивидуальные ИТ-проекты", "по договорённости"],
+    serviceGroups: [
+      {
+        title: "Фирменный стиль и печать",
+        items: [
+          ["Фирменный стиль", "+ 290 €"],
+          ["Визитки и флаеры", "по запросу"],
+        ],
+      },
+      {
+        title: "Автоматизация и ИИ",
+        items: [
+          ["ИИ-ассистент / автоматизация", "от 390 €"],
+          ["Простые CRM-решения", "по договорённости"],
+        ],
+      },
+      {
+        title: "Постоянная ИТ-помощь",
+        items: [
+          ["ИТ-помощь и сопровождение", "от 39 €/час"],
+          ["Многоязычные сайты", "по договорённости"],
+          ["Индивидуальные ИТ-проекты", "по договорённости"],
+        ],
+      },
     ],
     servicesNote: "Разбираться в технологиях — не ваша работа. Это моя работа.",
     aboutTitle: "Технологии — понятно и по делу.",
@@ -177,15 +202,7 @@ const copy = {
 } as const;
 
 const processIcons = [ChatsCircle, PaintBrush, GearSix, PaperPlaneTilt];
-const serviceIcons = [
-  PaintBrush,
-  IdentificationCard,
-  Robot,
-  GearSix,
-  Translate,
-  Storefront,
-  FolderOpen,
-];
+const serviceIcons = [PaintBrush, Robot, GearSix];
 
 export function EditorialHome({ language }: { language: Language }) {
   const t = copy[language];
@@ -316,13 +333,22 @@ export function EditorialHome({ language }: { language: Language }) {
                 <blockquote className="olga-hand">{t.servicesNote}</blockquote>
               </div>
               <div className="paper-service-slips">
-                {t.services.map(([name, price], index) => {
+                {t.serviceGroups.map((group, index) => {
                   const Icon = serviceIcons[index];
                   return (
-                    <article key={name}>
-                      <Icon size={22} weight="thin" aria-hidden="true" />
-                      <span>{name}</span>
-                      <strong>{price}</strong>
+                    <article key={group.title}>
+                      <div className="paper-service-title">
+                        <Icon size={25} weight="thin" aria-hidden="true" />
+                        <h3 className="olga-hand">{group.title}</h3>
+                      </div>
+                      <ul>
+                        {group.items.map(([name, price]) => (
+                          <li key={name}>
+                            <span>{name}</span>
+                            <strong>{price}</strong>
+                          </li>
+                        ))}
+                      </ul>
                     </article>
                   );
                 })}
