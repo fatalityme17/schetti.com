@@ -109,7 +109,7 @@ html {
     width: fit-content;
     padding: 0.28rem 0.65rem 0.35rem;
     color: #f8f3ea;
-    background: #8b5a2b;
+    background: #a94720;
     -webkit-mask: url("/images/torn-mask-a.svg") center / 100% 100% no-repeat;
     mask: url("/images/torn-mask-a.svg") center / 100% 100% no-repeat;
   }
@@ -150,7 +150,7 @@ html {
   }
 
   .agency-paper-section > div:first-child {
-    border-color: rgb(139 90 43 / 0.34);
+    border-color: rgb(169 71 32 / 0.34);
   }
 
   .agency-formats {
@@ -220,7 +220,7 @@ html {
     left: 0;
     width: 0.8rem;
     height: 1px;
-    background: #8b5a2b;
+    background: #a94720;
     content: "";
     transform: rotate(-4deg);
   }
@@ -231,7 +231,7 @@ html {
     gap: 0.8rem 1.5rem;
     align-items: center;
     padding-top: 1.35rem;
-    border-top: 1px solid rgb(139 90 43 / 0.28);
+    border-top: 1px solid rgb(169 71 32 / 0.28);
     color: #5e4b43;
     font-size: 0.78rem;
     line-height: 1.45;
@@ -246,7 +246,7 @@ html {
   .agency-terms-grid {
     align-items: center;
     color: #f8f3ea;
-    background: #8b5a2b;
+    background: #a94720;
     -webkit-mask-image: url("/images/torn-mask-c.svg");
     mask-image: url("/images/torn-mask-c.svg");
   }
@@ -300,7 +300,7 @@ html {
     display: inline-block;
     padding: 0.35rem 1.25rem 0.65rem;
     color: #f8f3ea;
-    background: #8b5a2b;
+    background: #a94720;
     -webkit-mask: url("/images/torn-mask-a.svg") center / 100% 100% no-repeat;
     mask: url("/images/torn-mask-a.svg") center / 100% 100% no-repeat;
   }
@@ -324,7 +324,7 @@ html {
     width: 3.4rem;
     height: 1px;
     margin-top: 0.75rem;
-    background: #8b5a2b;
+    background: #a94720;
     content: "";
     transform: rotate(-1.5deg);
   }
@@ -535,7 +535,7 @@ html::-webkit-scrollbar {
 
   .paper-site-nav a:hover,
   .paper-audience-link:hover {
-    color: #8b5a2b;
+    color: #a94720;
     text-decoration: underline;
   }
 
@@ -549,7 +549,7 @@ html::-webkit-scrollbar {
     bottom: 0.42rem;
     left: 0.15rem;
     height: 0.12rem;
-    background: #8b5a2b;
+    background: #a94720;
     border-radius: 50%;
     content: "";
     transform: rotate(-2deg);
@@ -609,7 +609,7 @@ html::-webkit-scrollbar {
     margin: 0.2rem 0 0 -1.15rem;
     padding: 0.55rem 1.55rem 1.45rem;
     color: #f8f3ea;
-    background: #8b5a2b;
+    background: #a94720;
     font-style: normal;
     line-height: 0.92;
     white-space: nowrap;
@@ -697,7 +697,7 @@ html::-webkit-scrollbar {
 
   .paper-hero-proof li::before {
     margin-right: 0.55rem;
-    color: #8b5a2b;
+    color: #a94720;
     content: "✓";
   }
 
@@ -706,7 +706,7 @@ html::-webkit-scrollbar {
     align-items: center;
     gap: 0.55rem;
     margin-top: 1.7rem;
-    border-bottom: 1px solid #8b5a2b;
+    border-bottom: 1px solid #a94720;
     padding-bottom: 0.2rem;
     font-weight: 800;
   }
@@ -968,7 +968,7 @@ html::-webkit-scrollbar {
     padding: 2.45rem 2.5rem 1.6rem;
     color: #f8f3ea;
     background:
-      linear-gradient(rgb(139 90 43 / 0.96), rgb(139 90 43 / 0.96)),
+      linear-gradient(rgb(169 71 32 / 0.96), rgb(169 71 32 / 0.96)),
       url("/images/paper-grain-512.webp");
     z-index: 2;
     margin-right: -0.35rem;
@@ -1342,7 +1342,7 @@ html::-webkit-scrollbar {
   }
   .paper-service-slips strong {
     flex: 0 0 auto;
-    color: #8b5a2b;
+    color: #a94720;
     font-size: 0.55rem;
     text-align: right;
   }
@@ -1380,7 +1380,7 @@ html::-webkit-scrollbar {
     position: relative;
     z-index: 1;
     color: #f8f3ea;
-    background: #8b5a2b;
+    background: #a94720;
     clip-path: polygon(0.8% 2.5%, 9% 0.6%, 18% 3%, 27% 0.4%, 36% 2.7%, 45% 0.5%, 54% 3.2%, 63% 0.7%, 72% 2.6%, 81% 0.5%, 90% 3.1%, 99% 0.8%, 99.4% 18%, 98.7% 35%, 99.5% 52%, 98.6% 69%, 99.3% 86%, 98.8% 99%, 88% 97%, 77% 99%, 66% 96.8%, 55% 99%, 44% 96.7%, 33% 99%, 22% 96.8%, 11% 99%, 0.7% 97%, 1.3% 81%, 0.4% 64%, 1.2% 47%, 0.3% 30%, 1.1% 14%);
   }
   .paper-contact > p {
@@ -1897,7 +1897,7 @@ html::-webkit-scrollbar {
   --ink: #2a1f17;
   --ink-muted: #6b5b4a;
   --line: #d9cdbb;
-  --accent: #8b5a2b;
+  --accent: #a94720;
   --accent-ink: #f8f3ea;
   --accent-soft: #e4d5be;
 
