@@ -23,6 +23,7 @@
     "@tanstack/react-start": "^1.168.26",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
+    "rough-notation": "^0.5.1",
     "tailwindcss": "^4.2.1"
   },
   "devDependencies": {

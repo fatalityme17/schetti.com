@@ -1,6 +1,5 @@
 import {
   ArrowRight,
-  Browser,
   ChatsCircle,
   Check,
   EnvelopeSimple,
@@ -14,6 +13,7 @@ import {
   WhatsappLogo,
 } from "@phosphor-icons/react";
 import { Page } from "@/components/site-layout";
+import { RoughMark } from "@/components/rough-mark";
 
 type Language = "de" | "ru";
 
@@ -32,6 +32,7 @@ const copy = {
     heroTop: "Ihr Unternehmen digital —",
     heroBand: "ohne Stress.",
     heroHand: "Ich kümmere mich darum.",
+    heroProof: ["Website als klare Basis", "Passende Module nach Bedarf", "Persönlich umgesetzt"],
     sheets: [
       {
         title: "IHRE WEBSITE",
@@ -126,6 +127,7 @@ const copy = {
     heroTop: "Ваш бизнес онлайн —",
     heroBand: "без стресса.",
     heroHand: "Я обо всём позабочусь.",
+    heroProof: ["Понятный сайт как основа", "Нужные модули по ситуации", "Личная реализация"],
     sheets: [
       { title: "ВАШ САЙТ", kind: "wireframe", items: [] },
       { title: "СОДЕРЖАНИЕ И СТРУКТУРА", kind: "structure", items: [] },
@@ -268,8 +270,23 @@ export function EditorialHome({ language }: { language: Language }) {
                 <span>{t.heroTop}</span>
                 <em>{t.heroBand}</em>
               </h1>
-              <p className="olga-hand paper-hero-note">{t.heroHand}</p>
+              <p className="olga-hand paper-hero-note">
+                <RoughMark>{t.heroHand}</RoughMark>
+              </p>
             </div>
+            <aside className="paper-hero-proof" aria-label={isRussian ? "Коротко о предложении" : "Das Angebot auf einen Blick"}>
+              <span className="paper-tape" aria-hidden="true" />
+              <strong>{isRussian ? "БЫСТРЫЙ СТАРТ" : "SCHNELLSTART"}</strong>
+              <ul>
+                {t.heroProof.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+              <a href="#starter">
+                {isRussian ? "Что входит" : "Was ist dabei"}
+                <ArrowRight size={19} aria-hidden="true" />
+              </a>
+            </aside>
           </section>
 
           <div className="paper-offer-process-services">
@@ -394,54 +411,5 @@ export function EditorialHome({ language }: { language: Language }) {
         </main>
       </article>
     </Page>
-  );
-}
-
-function WebsiteSketch() {
-  return (
-    <div className="website-sketch" aria-hidden="true">
-      <div className="sketch-browser">
-        <span />
-        <i />
-        <i />
-        <i />
-      </div>
-      <div className="sketch-hero">
-        <Browser size={34} weight="thin" />
-      </div>
-      <div className="sketch-cards">
-        <span />
-        <span />
-        <span />
-      </div>
-      <div className="sketch-lines">
-        <i />
-        <i />
-        <i />
-      </div>
-    </div>
-  );
-}
-
-function StructureSketch() {
-  return (
-    <div className="structure-sketch" aria-hidden="true">
-      <div className="structure-copy">
-        <i />
-        <i />
-        <i />
-      </div>
-      {Array.from({ length: 4 }).map((_, index) => (
-        <div key={index}>
-          <span />
-          <i />
-          <i />
-        </div>
-      ))}
-      <div className="structure-boxes">
-        <b />
-        <b />
-      </div>
-    </div>
   );
 }

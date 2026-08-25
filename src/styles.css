@@ -172,7 +172,9 @@ html::-webkit-scrollbar {
   }
 
   .paper-hero {
-    display: block;
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 23rem;
     height: 32.25rem;
     min-height: 32.25rem;
   }
@@ -186,7 +188,7 @@ html::-webkit-scrollbar {
     min-height: 0;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 8.6rem clamp(3.5rem, 6vw, 6.4rem) 1.2rem;
+    padding: 7.6rem clamp(3.5rem, 5vw, 5.6rem) 1.2rem;
   }
 
   .paper-hero-copy h1 {
@@ -244,7 +246,7 @@ html::-webkit-scrollbar {
     height: 0.18rem;
     background: #52613b;
     border-radius: 50%;
-    content: "";
+    content: none;
     transform: rotate(-3deg);
   }
 
@@ -256,8 +258,61 @@ html::-webkit-scrollbar {
     height: 0.1rem;
     background: #52613b;
     border-radius: 50%;
-    content: "";
+    content: none;
     transform: rotate(2deg);
+  }
+
+  .paper-hero-proof {
+    position: relative;
+    align-self: center;
+    width: 20rem;
+    margin: 4rem 3rem 0 0;
+    padding: 3rem 2.2rem 2rem;
+    background:
+      linear-gradient(rgb(255 251 242 / 0.72), rgb(255 251 242 / 0.72)),
+      url("/images/paper-grain-512.webp");
+    color: #2b1720;
+    filter: drop-shadow(0 1rem 1rem rgb(67 40 24 / 0.18));
+    transform: rotate(1.2deg);
+    clip-path: polygon(1% 2%, 12% 0.5%, 24% 1.8%, 37% 0.4%, 50% 1.6%, 63% 0.3%, 76% 1.7%, 89% 0.4%, 99% 1.8%, 99.4% 17%, 98.9% 34%, 99.6% 51%, 99% 68%, 99.5% 84%, 98.8% 99%, 87% 97.7%, 74% 99%, 61% 97.8%, 48% 99%, 35% 97.6%, 22% 99%, 9% 97.8%, 1% 99%, 0.5% 81%, 1.1% 63%, 0.4% 45%, 1% 27%);
+  }
+
+  .paper-hero-proof .paper-tape {
+    position: absolute;
+    top: -0.65rem;
+    left: 50%;
+    width: 7.5rem;
+    height: 1.65rem;
+    background: rgb(224 210 178 / 0.78);
+    transform: translateX(-50%) rotate(-3deg);
+  }
+
+  .paper-hero-proof > strong {
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+  }
+
+  .paper-hero-proof ul {
+    display: grid;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .paper-hero-proof li::before {
+    margin-right: 0.55rem;
+    color: #a94720;
+    content: "✓";
+  }
+
+  .paper-hero-proof a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    margin-top: 1.7rem;
+    border-bottom: 1px solid #a94720;
+    padding-bottom: 0.2rem;
+    font-weight: 800;
   }
 
   .paper-workboard {
@@ -1096,6 +1151,15 @@ html::-webkit-scrollbar {
     .paper-hero-note {
       margin: 0.9rem auto 0;
       font-size: clamp(1.8rem, 5.8vw, 2.8rem);
+    }
+    .paper-hero-proof {
+      width: min(31rem, calc(100% - 2.8rem));
+      margin: 0 auto 2.6rem;
+      padding: 2.6rem 2rem 1.8rem;
+      transform: rotate(-0.5deg);
+    }
+    .paper-hero-proof ul {
+      grid-template-columns: 1fr;
     }
     .paper-workboard {
       display: grid;
