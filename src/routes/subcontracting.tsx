@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { EnvelopeSimple, PaperPlaneTilt, Phone, WhatsappLogo } from "@phosphor-icons/react";
 import type { ReactNode } from "react";
-import { ContactLinks, Page } from "@/components/site-layout";
+import { Page } from "@/components/site-layout";
 
 export const Route = createFileRoute("/subcontracting")({
   head: () => ({
@@ -100,7 +101,7 @@ function Tracks() {
   return (
     <section id="sparten" className="agency-tracks mb-24 scroll-mt-24 md:mb-32">
       <p className="agency-eyebrow mb-4 text-[10px] font-semibold uppercase tracking-[0.22em] text-accent">
-        01 — Leistungen
+        Leistungen
       </p>
       <h2 className="font-display text-4xl font-bold tracking-tight text-ink md:text-5xl">
         Wo ich Ihr Projekt entlaste.
@@ -150,7 +151,7 @@ function CollaborationFormats() {
   return (
     <section id="formate" className="agency-formats mb-24 scroll-mt-24 md:mb-32">
       <p className="agency-eyebrow mb-4 text-[10px] font-semibold uppercase tracking-[0.22em] text-accent">
-        02 — Zusammenarbeit
+        Zusammenarbeit
       </p>
       <h2 className="font-display text-4xl font-bold tracking-tight text-ink md:text-5xl">
         Passend zur Projektphase.
@@ -176,7 +177,7 @@ function CollaborationFormats() {
 
 function Profile() {
   return (
-    <SectionHeader id="profil" no="03" title="Profil">
+    <SectionHeader id="profil" title="Profil">
       <div className="agency-profile-grid grid gap-10 md:grid-cols-2 md:gap-16">
         <div>
           <h3 className="font-display text-2xl font-semibold text-ink">
@@ -208,7 +209,7 @@ function Profile() {
 
 function Konditionen() {
   return (
-    <SectionHeader id="konditionen" no="04" title="Konditionen">
+    <SectionHeader id="konditionen" title="Konditionen">
       <div className="agency-terms-grid grid gap-10 md:grid-cols-2 md:gap-16">
         <div>
           <p className="agency-rate font-display text-5xl font-bold text-ink md:text-6xl">
@@ -235,7 +236,7 @@ function Contact() {
     >
       <div className="mx-auto max-w-2xl">
         <p className="mb-4 text-[10px] font-semibold uppercase tracking-[0.22em] text-accent">
-          05 — Kontakt
+          Kontakt
         </p>
         <h2 className="font-display text-4xl font-bold tracking-tight text-ink md:text-5xl">
           Projekt kurz besprechen.
@@ -243,7 +244,7 @@ function Contact() {
         <p className="mt-6 text-lg text-ink-muted">
           Projektphase und gewünschte Unterstützung genügen für eine erste Einschätzung.
         </p>
-        <ContactLinks emailSubject="Projektanfrage über schetti.com" />
+        <AgencyContactLinks />
         <p className="mt-5 text-xs text-ink-muted">Aktuell verfügbar · remote im DACH-Raum</p>
       </div>
     </section>
@@ -252,24 +253,56 @@ function Contact() {
 
 function SectionHeader({
   id,
-  no,
   title,
   children,
 }: {
   id: string;
-  no: string;
   title: string;
   children: ReactNode;
 }) {
   return (
     <section id={id} className="agency-paper-section mb-24 scroll-mt-24 md:mb-32">
       <div className="mb-10 flex items-baseline gap-6 border-b border-line pb-4">
-        <span className="agency-section-number olga-hand text-accent">{no}</span>
         <h2 className="font-display text-3xl font-bold tracking-tight text-ink md:text-4xl">
           {title}
         </h2>
       </div>
       {children}
     </section>
+  );
+}
+
+function AgencyContactLinks() {
+  return (
+    <div className="paper-contact-grid agency-contact-grid" aria-label="Kontaktmöglichkeiten">
+      <a href={`mailto:info@schetti.com?subject=${encodeURIComponent("Projektanfrage über schetti.com")}`}>
+        <EnvelopeSimple size={25} aria-hidden="true" />
+        <span>
+          E-Mail
+          <small>info@schetti.com</small>
+        </span>
+      </a>
+      <a href="tel:+4915205215760">
+        <Phone size={25} aria-hidden="true" />
+        <span>
+          Anrufen
+          <small>+49 1520 5215760</small>
+        </span>
+      </a>
+      <a href="https://wa.me/4915205215760" target="_blank" rel="noopener noreferrer">
+        <WhatsappLogo size={25} aria-hidden="true" />
+        <span>
+          WhatsApp
+          <small>+49 1520 5215760</small>
+        </span>
+      </a>
+      <a href="https://t.me/fatalityme" target="_blank" rel="noopener noreferrer">
+        <PaperPlaneTilt size={25} aria-hidden="true" />
+        <span>
+          Telegram
+          <small>@fatalityme</small>
+        </span>
+      </a>
+    </div>
   );
 }

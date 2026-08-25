@@ -197,13 +197,6 @@ html {
     transform: rotate(0.6deg);
   }
 
-  .agency-section-number {
-    min-width: 2.5rem;
-    font-size: 1.65rem;
-    line-height: 1;
-    transform: rotate(-4deg);
-  }
-
   .agency-profile-grid,
   .agency-terms-grid {
     padding: clamp(1.6rem, 4vw, 3.1rem);
@@ -240,8 +233,9 @@ html {
     mask-image: url("/images/torn-mask-c.svg");
   }
 
-  .agency-terms-grid p {
-    color: inherit;
+  .agency-terms-grid,
+  .agency-terms-grid * {
+    color: #fff8e9 !important;
   }
 
   .agency-rate {
@@ -272,6 +266,16 @@ html {
 
   .agency-paper-contact a {
     border-color: rgb(248 243 234 / 0.45);
+  }
+
+  .agency-contact-grid {
+    max-width: 42rem;
+    margin-inline: auto;
+    text-align: left;
+  }
+
+  .agency-contact-grid a {
+    color: #f8f3ea;
   }
 
   .legal-paper-page > h1 {
