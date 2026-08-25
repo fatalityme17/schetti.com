@@ -6,17 +6,20 @@ import { Page } from "@/components/site-layout";
 export const Route = createFileRoute("/subcontracting")({
   head: () => ({
     meta: [
-      { title: "Business Analysis & Prozesse für Projektteams | Olga Schetti" },
+      { title: "Business Analyst & Prozessmanagement für Projektteams | Olga Schetti" },
       {
         name: "description",
         content:
-          "Externe Unterstützung für Projektteams bei Requirements, Prozessanalyse, User Flows und Automatisierungskonzepten.",
+          "Externe Business- und Process-Analystin für Requirements Engineering, BPMN, Prozessanalyse, Digitalisierung und Workflow-Automatisierung im DACH-Raum.",
       },
-      { property: "og:title", content: "Business Analysis & Prozesse für Projektteams" },
+      {
+        property: "og:title",
+        content: "Business Analyst & Prozessmanagement für Projektteams",
+      },
       {
         property: "og:description",
         content:
-          "Externe Business- und Process-Analystin für Requirements, Prozesse, User Flows und Automatisierung.",
+          "Externe Business- und Process-Analystin für Requirements Engineering, BPMN, Prozessanalyse, Digitalisierung und Workflow-Automatisierung im DACH-Raum.",
       },
       { property: "og:url", content: "/subcontracting" },
     ],
@@ -48,14 +51,14 @@ function Hero() {
   return (
     <header className="agency-paper-hero mb-24 md:mb-32">
       <p className="mb-6 font-display text-xs font-semibold uppercase tracking-[0.22em] text-accent">
-        Für Agenturen, Studios & Projektteams
+        Für Unternehmen, Agenturen & Projektteams
       </p>
       <h1 className="max-w-5xl font-display text-5xl font-bold leading-[1.05] tracking-tight text-ink md:text-7xl">
         Externe Business- & Process-Analystin für digitale Projekte.
       </h1>
       <p className="mt-8 max-w-2xl text-xl font-light leading-relaxed text-ink-muted md:text-2xl">
-        Ich strukturiere Anforderungen, Prozesse und Entscheidungen, damit Fachbereich, Design und
-        Entwicklung zügig umsetzen können.
+        Ich analysiere und strukturiere Anforderungen, Prozesse und Schnittstellen, damit
+        Fachbereich und Entwicklung digitale Lösungen effizient umsetzen können.
       </p>
       <a href="#kontakt" className="agency-primary-cta mt-9 inline-flex text-sm font-medium">
         Kontakt →
@@ -70,30 +73,33 @@ function Hero() {
 function Tracks() {
   const tracks = [
     {
-      title: "Requirements & Product",
-      subtitle: "Von der Idee zur umsetzbaren Lösung",
+      title: "Requirements & Business Analysis",
+      subtitle: "Von der fachlichen Anforderung zur umsetzbaren Lösung",
       items: [
-        "Fachliche und technische Anforderungen strukturieren",
-        "User Flows, User Stories und Akzeptanzkriterien",
-        "Schnittstelle zwischen Fachbereich, Design und Entwicklung",
+        "Fachliche und technische Anforderungen analysieren und strukturieren",
+        "User Stories, Akzeptanzkriterien und fachliche Spezifikationen erstellen",
+        "Schnittstellen zwischen Fachbereich, IT und externen Systemen klären",
+        "Anforderungen und Entscheidungen nachvollziehbar dokumentieren",
       ],
     },
     {
-      title: "Prozesse & Automatisierung",
-      subtitle: "Abläufe verstehen und vereinfachen",
+      title: "Prozesse & Digitalisierung",
+      subtitle: "Bestehende Abläufe verstehen, modellieren und verbessern",
       items: [
         "Ist-/Soll-Prozesse und Pain Points analysieren",
-        "BPMN 2.0, Workflows und Routing",
-        "Automatisierungspotenziale und Anforderungen definieren",
+        "BPMN 2.0, Workflows, Verantwortlichkeiten und Schnittstellen modellieren",
+        "Manuelle Arbeitsschritte und Digitalisierungspotenziale identifizieren",
+        "CRM-, Formular- und digitale Kundenprozesse optimieren",
       ],
     },
     {
-      title: "AI & GenAI",
-      subtitle: "KI als sinnvoller Prozessbaustein",
+      title: "Automatisierung & fachliche Qualitätssicherung",
+      subtitle: "Digitale Abläufe sinnvoll automatisieren und fachlich prüfen",
       items: [
-        "Use Cases bewerten und Anforderungen definieren",
-        "LLM-Workflows und interne Assistenten konzipieren",
-        "Human-in-the-loop, Datenzugriff und Datenschutz mitdenken",
+        "Automatisierungspotenziale und Workflow-Logiken analysieren",
+        "Low-Code-/No-Code- und geeignete KI-Werkzeuge in Prozesse einbeziehen",
+        "Routing-, Entscheidungs- und Ausnahmefälle fachlich prüfen",
+        "Testfälle und Akzeptanzkriterien für digitale Lösungen definieren",
       ],
     },
   ];
@@ -129,23 +135,28 @@ function Tracks() {
 
 function CollaborationFormats() {
   const formats = [
-    { title: "Workshop", body: "Ziele, Anforderungen und nächste Schritte in kurzer Zeit klären." },
+    {
+      title: "Workshop",
+      body: "Ziele, Prozesse, Anforderungen und offene Fragen strukturiert klären.",
+    },
     {
       title: "Konzeptionsphase",
-      body: "Prozesse und Requirements bis zur umsetzbaren Übergabe ausarbeiten.",
+      body: "Prozesse und Requirements analysieren und bis zur umsetzbaren Übergabe ausarbeiten.",
     },
     {
       title: "Projektbegleitung",
-      body: "Ihr Team laufend bei Analyse, Abstimmung und Dokumentation unterstützen.",
+      body: "Ihr Team laufend bei Analyse, Abstimmung, Testing und Dokumentation unterstützen.",
     },
   ];
   const deliverables = [
     "Requirements",
-    "User Flows",
+    "Prozessanalyse",
     "User Stories",
     "Akzeptanzkriterien",
-    "BPMN-Prozesse",
-    "Automatisierungskonzept",
+    "BPMN",
+    "Workflow-Konzeption",
+    "Testing",
+    "Automatisierung",
   ];
 
   return (
@@ -181,13 +192,23 @@ function Profile() {
       <div className="agency-profile-grid grid gap-10 md:grid-cols-2 md:gap-16">
         <div>
           <h3 className="font-display text-2xl font-semibold text-ink">
-            IT-Projektmanagement & Digitalisierung
+            Business Analysis · Prozessmanagement · Digitalisierung
           </h3>
-          <p className="mt-2 text-sm text-ink-muted">Projekterfahrung seit 2017</p>
+          <p className="mt-2 text-sm text-ink-muted">
+            Mehrjährige Erfahrung an der Schnittstelle zwischen Fachbereich und IT.
+          </p>
           <ul className="agency-profile-points mt-7 space-y-3 text-ink-muted">
-            <li>Anforderungen, Prozesse und Automatisierungspotenziale analysieren</li>
-            <li>CRM-Workflows und digitale Abläufe strukturieren</li>
-            <li>Projekte von der Konzeption bis zum produktiven Einsatz begleiten</li>
+            <li>Geschäftsprozesse, Anforderungen und Automatisierungspotenziale analysieren</li>
+            <li>CRM-, Formular- und Workflow-Prozesse strukturieren und weiterentwickeln</li>
+            <li>Fachliche und technische Anforderungen für digitale Lösungen definieren</li>
+            <li>Backlogs, Tests und Einführung neuer Funktionen fachlich begleiten</li>
+            <li>
+              Digitale Projekte von der Konzeption bis zum produktiven Einsatz unterstützen
+            </li>
+            <li>
+              Erfahrung mit automatisierten Chat-Lösungen, Workflow-Routing und KI-gestützten
+              Werkzeugen
+            </li>
           </ul>
         </div>
         <div className="border-t border-line pt-6 md:border-l md:border-t-0 md:pl-10 md:pt-0">
@@ -195,12 +216,15 @@ function Profile() {
             Qualifikation
           </p>
           <p className="mt-5 font-display font-semibold text-ink">
-            Hochschulabschluss: Informationssysteme & -technologien
+            Hochschulabschluss · Informationssysteme & -technologien
           </p>
-          <p className="mt-2 font-display font-semibold text-ink">Master Optotechnik & Robotik</p>
-          <p className="mt-5 text-sm leading-relaxed text-ink-muted">
-            Berufsbezeichnung Ingenieurin in Nordrhein-Westfalen anerkannt. DE · EN · RU.
+          <p className="mt-2 font-display font-semibold text-ink">
+            Master · Optotechnik & Robotik
           </p>
+          <p className="mt-2 text-sm leading-relaxed text-ink-muted">
+            Anerkennung der Berufsbezeichnung „Ingenieurin“ in Deutschland
+          </p>
+          <p className="mt-2 text-sm font-semibold text-ink">DE · EN · RU</p>
         </div>
       </div>
     </SectionHeader>
