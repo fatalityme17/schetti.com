@@ -145,7 +145,6 @@ export const Route = createRootRoute({
 
 function RootShell({ children }: { children: ReactNode }) {
   const pathname = useRouterState({ select: (state) => state.location.pathname });
-  const language = pathname.startsWith("/ru") ? "ru" : "de";
 
   const homeDesignContract = `<!--
 THESIS: Olga turns a confusing digital project into a clearly prepared, human handover folder.
@@ -156,7 +155,7 @@ FORM: Responsive editorial paper collage approved by the client; desktop is an a
 -->`;
 
   return (
-    <html lang={language}>
+    <html lang="de">
       <head>
         <HeadContent />
       </head>

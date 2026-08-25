@@ -15,8 +15,6 @@ import {
 import { Page } from "@/components/site-layout";
 import { RoughMark } from "@/components/rough-mark";
 
-type Language = "de" | "ru";
-
 const copy = {
   de: {
     brand: "Olga Schetti",
@@ -73,6 +71,7 @@ const copy = {
     servicesTitle: "Weitere Leistungen — wenn Sie sie brauchen.",
     servicesIntro:
       "Der Schnellstart ist die Basis. Weitere Bausteine kommen nur dazu, wenn sie für Ihr Unternehmen sinnvoll sind.",
+    servicesOptional: "Optional zubuchbar · gegen Aufpreis",
     serviceGroups: [
       {
         title: "Corporate Design & Print",
@@ -113,111 +112,23 @@ const copy = {
     telegram: "Telegram",
     available: "Aktuell verfügbar · remote im DACH-Raum",
   },
-  ru: {
-    brand: "Ольга Щетти",
-    role: "ИТ-Фрилансер",
-    nav: [
-      ["#starter", "Предложение"],
-      ["#leistungen", "Как работаем"],
-      ["#ueber-mich", "Обо мне"],
-      ["#kontakt", "Контакты"],
-    ],
-    agency: "Для агентств",
-    agencyHref: "/ru/subcontracting",
-    heroTop: "Ваш бизнес онлайн —",
-    heroBand: "без стресса.",
-    heroHand: "Я обо всём позабочусь.",
-    heroProof: ["Понятный сайт как основа", "Нужные модули по ситуации", "Личная реализация"],
-    sheets: [
-      { title: "ВАШ САЙТ", kind: "wireframe", items: [] },
-      { title: "СОДЕРЖАНИЕ И СТРУКТУРА", kind: "structure", items: [] },
-      {
-        title: "МОДУЛИ ПО ПОТРЕБНОСТИ",
-        kind: "modules",
-        items: ["Профиль Google", "Онлайн-календарь", "Способы связи", "другие модули"],
-      },
-    ],
-    offerLabel: "ПРЕДЛОЖЕНИЕ",
-    offerTitle: "Быстрый старт — сайт как основа",
-    offerIntro:
-      "Вместе определим, как представить ваши услуги онлайн и какие модули действительно нужны вашему бизнесу.",
-    offerItems: [
-      "Одностраничный сайт",
-      "Подходящие модули для вашего бизнеса",
-      "например, профиль Google, WhatsApp Business или онлайн-запись",
-    ],
-    price: "490 €",
-    tax: "В соответствии с § 19 UStG налог на добавленную стоимость не начисляется.",
-    extras: "Хостинг, домен и платные сервисы третьих сторон оплачиваются отдельно.",
-    cta: "Коротко рассказать.",
-    processLabel: "КАК МЫ РАБОТАЕМ",
-    process: [
-      ["Обсуждаем.", "Вы рассказываете, я задаю правильные вопросы."],
-      ["Планируем.", "Расставляем приоритеты и собираем содержание."],
-      ["Настраиваю.", "Создаю понятное и адаптивное решение."],
-      ["Передаю.", "Объясняю результат и передаю всё готовым к работе."],
-    ],
-    servicesTitle: "Другие услуги — если они вам нужны.",
-    servicesIntro:
-      "Быстрый старт — это основа. Остальные модули добавляются только тогда, когда они полезны вашему бизнесу.",
-    serviceGroups: [
-      {
-        title: "Фирменный стиль и печать",
-        items: [
-          ["Фирменный стиль", "+ 290 €"],
-          ["Визитки и флаеры", "по запросу"],
-        ],
-      },
-      {
-        title: "Автоматизация и ИИ",
-        items: [
-          ["ИИ-ассистент / автоматизация", "от 390 €"],
-          ["Простые CRM-решения", "по договорённости"],
-        ],
-      },
-      {
-        title: "Постоянная ИТ-помощь",
-        items: [
-          ["ИТ-помощь и сопровождение", "от 39 €/час"],
-          ["Многоязычные сайты", "по договорённости"],
-          ["Индивидуальные ИТ-проекты", "по договорённости"],
-        ],
-      },
-    ],
-    servicesNote: "Разбираться в технологиях — не ваша работа. Это моя работа.",
-    aboutTitle: "Технологии — понятно и по делу.",
-    about:
-      "Я Ольга Щетти, инженер в области информационных технологий. Соединяю технические знания с опытом цифровизации и ИТ-проектов — практично, лично и в соответствии с реальными потребностями вашего бизнеса.",
-    aboutMeta:
-      "Квалификация Ingenieurin признана в Северном Рейне — Вестфалии · ИТ-проекты с 2017 года · DE / EN / RU",
-    contactLabel: "КОНТАКТЫ",
-    contactTitle: "Коротко расскажите о своём бизнесе.",
-    contactIntro:
-      "Двух-трёх предложений достаточно. Я отвечу в ближайшее время и честно скажу, что имеет смысл.",
-    email: "Написать письмо",
-    call: "Позвонить",
-    whatsapp: "WhatsApp",
-    telegram: "Telegram",
-    available: "Сейчас доступна для проектов · удалённо в регионе DACH",
-  },
 } as const;
 
 const processIcons = [ChatsCircle, PencilSimple, Monitor, PaperPlaneTilt];
 const serviceIcons = [PencilSimple, GearSix, Headphones];
 
-export function EditorialHome({ language }: { language: Language }) {
-  const t = copy[language];
-  const isRussian = language === "ru";
+export function EditorialHome() {
+  const t = copy.de;
 
   return (
     <Page variant="folder">
       <article className="paper-site-shell">
         <header className="paper-site-header">
-          <a href={isRussian ? "/ru" : "/"} className="paper-site-brand">
+          <a href="/" className="paper-site-brand">
             <strong>{t.brand}</strong>
             <span> - {t.role}</span>
           </a>
-          <nav className="paper-site-nav" aria-label={isRussian ? "Навигация" : "Hauptnavigation"}>
+          <nav className="paper-site-nav" aria-label="Hauptnavigation">
             {t.nav.map(([href, label]) => (
               <a href={href} key={href}>
                 {label}
@@ -228,37 +139,18 @@ export function EditorialHome({ language }: { language: Language }) {
             <a className="paper-audience-link" href={t.agencyHref}>
               {t.agency}
             </a>
-            <nav
-              className="paper-language"
-              aria-label={isRussian ? "Выбор языка" : "Sprachauswahl"}
-            >
-              <a href="/" lang="de" aria-current={!isRussian ? "page" : undefined}>
-                DE
-              </a>
-              <a href="/ru" lang="ru" aria-current={isRussian ? "page" : undefined}>
-                RU
-              </a>
-            </nav>
           </div>
           <details className="paper-mobile-menu">
-            <summary aria-label={isRussian ? "Открыть меню" : "Menü öffnen"}>
+            <summary aria-label="Menü öffnen">
               <List size={28} weight="regular" aria-hidden="true" />
             </summary>
-            <nav aria-label={isRussian ? "Мобильная навигация" : "Mobile Navigation"}>
+            <nav aria-label="Mobile Navigation">
               {t.nav.map(([href, label]) => (
                 <a href={href} key={href}>
                   {label}
                 </a>
               ))}
               <a href={t.agencyHref}>{t.agency}</a>
-              <span className="paper-mobile-languages">
-                <a href="/" lang="de" aria-current={!isRussian ? "page" : undefined}>
-                  DE
-                </a>
-                <a href="/ru" lang="ru" aria-current={isRussian ? "page" : undefined}>
-                  RU
-                </a>
-              </span>
             </nav>
           </details>
         </header>
@@ -274,16 +166,16 @@ export function EditorialHome({ language }: { language: Language }) {
                 <RoughMark>{t.heroHand}</RoughMark>
               </p>
             </div>
-            <aside className="paper-hero-proof" aria-label={isRussian ? "Коротко о предложении" : "Das Angebot auf einen Blick"}>
+            <aside className="paper-hero-proof" aria-label="Das Angebot auf einen Blick">
               <span className="paper-tape" aria-hidden="true" />
-              <strong>{isRussian ? "БЫСТРЫЙ СТАРТ" : "SCHNELLSTART"}</strong>
+              <strong>SCHNELLSTART</strong>
               <ul>
                 {t.heroProof.map((item) => (
                   <li key={item}>{item}</li>
                 ))}
               </ul>
               <a href="#starter">
-                {isRussian ? "Что входит" : "Was ist dabei"}
+                Was ist dabei
                 <ArrowRight size={19} aria-hidden="true" />
               </a>
             </aside>
@@ -330,6 +222,7 @@ export function EditorialHome({ language }: { language: Language }) {
               </div>
             </section>
             <section className="paper-services">
+              <p className="paper-services-option-note">{t.servicesOptional}</p>
               <div className="paper-services-copy">
                 <h2>{t.servicesTitle}</h2>
                 <p>{t.servicesIntro}</p>
@@ -372,10 +265,10 @@ export function EditorialHome({ language }: { language: Language }) {
               <p>{t.contactIntro}</p>
               <div
                 className="paper-contact-grid"
-                aria-label={isRussian ? "Способы связи" : "Kontaktmöglichkeiten"}
+                aria-label="Kontaktmöglichkeiten"
               >
                 <a
-                  href={`mailto:info@schetti.com?subject=${encodeURIComponent(isRussian ? "Сайт для моего бизнеса" : "Website für mein Unternehmen")}`}
+                  href={`mailto:info@schetti.com?subject=${encodeURIComponent("Website für mein Unternehmen")}`}
                 >
                   <EnvelopeSimple size={25} aria-hidden="true" />
                   <span>

@@ -12,9 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as DatenschutzRouteImport } from './routes/datenschutz'
 import { Route as ImpressumRouteImport } from './routes/impressum'
-import { Route as RuRouteImport } from './routes/ru'
 import { Route as SubcontractingRouteImport } from './routes/subcontracting'
-import { Route as RuSubcontractingRouteImport } from './routes/ru_.subcontracting'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -31,19 +29,9 @@ const ImpressumRoute = ImpressumRouteImport.update({
   path: '/impressum',
   getParentRoute: () => rootRouteImport,
 } as any)
-const RuRoute = RuRouteImport.update({
-  id: '/ru',
-  path: '/ru',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const SubcontractingRoute = SubcontractingRouteImport.update({
   id: '/subcontracting',
   path: '/subcontracting',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const RuSubcontractingRoute = RuSubcontractingRouteImport.update({
-  id: '/ru_/subcontracting',
-  path: '/ru/subcontracting',
   getParentRoute: () => rootRouteImport,
 } as any)
 
@@ -51,61 +39,34 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/datenschutz': typeof DatenschutzRoute
   '/impressum': typeof ImpressumRoute
-  '/ru': typeof RuRoute
   '/subcontracting': typeof SubcontractingRoute
-  '/ru/subcontracting': typeof RuSubcontractingRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/datenschutz': typeof DatenschutzRoute
   '/impressum': typeof ImpressumRoute
-  '/ru': typeof RuRoute
   '/subcontracting': typeof SubcontractingRoute
-  '/ru/subcontracting': typeof RuSubcontractingRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/datenschutz': typeof DatenschutzRoute
   '/impressum': typeof ImpressumRoute
-  '/ru': typeof RuRoute
   '/subcontracting': typeof SubcontractingRoute
-  '/ru_/subcontracting': typeof RuSubcontractingRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths:
-    | '/'
-    | '/datenschutz'
-    | '/impressum'
-    | '/ru'
-    | '/subcontracting'
-    | '/ru/subcontracting'
+  fullPaths: '/' | '/datenschutz' | '/impressum' | '/subcontracting'
   fileRoutesByTo: FileRoutesByTo
-  to:
-    | '/'
-    | '/datenschutz'
-    | '/impressum'
-    | '/ru'
-    | '/subcontracting'
-    | '/ru/subcontracting'
-  id:
-    | '__root__'
-    | '/'
-    | '/datenschutz'
-    | '/impressum'
-    | '/ru'
-    | '/subcontracting'
-    | '/ru_/subcontracting'
+  to: '/' | '/datenschutz' | '/impressum' | '/subcontracting'
+  id: '__root__' | '/' | '/datenschutz' | '/impressum' | '/subcontracting'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   DatenschutzRoute: typeof DatenschutzRoute
   ImpressumRoute: typeof ImpressumRoute
-  RuRoute: typeof RuRoute
   SubcontractingRoute: typeof SubcontractingRoute
-  RuSubcontractingRoute: typeof RuSubcontractingRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -131,25 +92,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ImpressumRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/ru': {
-      id: '/ru'
-      path: '/ru'
-      fullPath: '/ru'
-      preLoaderRoute: typeof RuRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/subcontracting': {
       id: '/subcontracting'
       path: '/subcontracting'
       fullPath: '/subcontracting'
       preLoaderRoute: typeof SubcontractingRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/ru_/subcontracting': {
-      id: '/ru_/subcontracting'
-      path: '/ru/subcontracting'
-      fullPath: '/ru/subcontracting'
-      preLoaderRoute: typeof RuSubcontractingRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
@@ -159,9 +106,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   DatenschutzRoute: DatenschutzRoute,
   ImpressumRoute: ImpressumRoute,
-  RuRoute: RuRoute,
   SubcontractingRoute: SubcontractingRoute,
-  RuSubcontractingRoute: RuSubcontractingRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

@@ -26,7 +26,6 @@ export const Route = createFileRoute("/subcontracting")({
     links: [
       { rel: "canonical", href: "/subcontracting" },
       { rel: "alternate", hrefLang: "de", href: "/subcontracting" },
-      { rel: "alternate", hrefLang: "ru", href: "/ru/subcontracting" },
     ],
   }),
   component: Subcontracting,

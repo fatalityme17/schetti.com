@@ -20,9 +20,8 @@ export const Route = createFileRoute("/")({
     links: [
       { rel: "canonical", href: "https://schetti.com/" },
       { rel: "alternate", hrefLang: "de", href: "https://schetti.com/" },
-      { rel: "alternate", hrefLang: "ru", href: "https://schetti.com/ru" },
       { rel: "alternate", hrefLang: "x-default", href: "https://schetti.com/" },
     ],
   }),
-  component: () => <EditorialHome language="de" />,
+  component: EditorialHome,
 });
