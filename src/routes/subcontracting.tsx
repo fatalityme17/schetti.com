@@ -31,7 +31,7 @@ export const Route = createFileRoute("/subcontracting")({
 function Subcontracting() {
   return (
     <Page>
-      <article className="container-page py-14 md:py-20">
+      <article className="agency-paper-page container-page py-14 md:py-20">
         <Hero />
         <Tracks />
         <CollaborationFormats />
@@ -45,7 +45,7 @@ function Subcontracting() {
 
 function Hero() {
   return (
-    <header className="mb-24 md:mb-32">
+    <header className="agency-paper-hero mb-24 md:mb-32">
       <p className="mb-6 font-display text-xs font-semibold uppercase tracking-[0.22em] text-accent">
         Für Agenturen, Studios & Projektteams
       </p>
@@ -108,7 +108,7 @@ function Tracks() {
       </h2>
       <div className="mt-12 grid gap-8 lg:grid-cols-3">
         {tracks.map((track) => (
-          <div key={track.title} className="border border-line bg-surface p-7">
+          <div key={track.title} className="agency-paper-card border border-line bg-surface p-7">
             <h3 className="font-display text-2xl font-semibold text-ink">{track.title}</h3>
             <p className="mt-2 text-sm text-ink-muted">{track.subtitle}</p>
             <ul className="mt-7 space-y-3 text-sm text-ink-muted">
@@ -229,7 +229,7 @@ function Contact() {
   return (
     <section
       id="kontakt"
-      className="scroll-mt-24 border border-line bg-surface-2 p-10 text-center md:p-16"
+      className="agency-paper-contact scroll-mt-24 border border-line bg-surface-2 p-10 text-center md:p-16"
     >
       <div className="mx-auto max-w-2xl">
         <p className="mb-4 text-[10px] font-semibold uppercase tracking-[0.22em] text-accent">
@@ -260,7 +260,7 @@ function SectionHeader({
   children: ReactNode;
 }) {
   return (
-    <section id={id} className="mb-24 scroll-mt-24 md:mb-32">
+    <section id={id} className="agency-paper-section mb-24 scroll-mt-24 md:mb-32">
       <div className="mb-10 flex items-baseline gap-6 border-b border-line pb-4">
         <span className="font-display text-sm font-semibold italic text-accent">{no}</span>
         <h2 className="font-display text-3xl font-bold tracking-tight text-ink md:text-4xl">

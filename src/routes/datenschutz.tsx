@@ -22,7 +22,7 @@ export const Route = createFileRoute("/datenschutz")({
 function Datenschutz() {
   return (
     <Page>
-      <article className="container-page py-20 md:py-28">
+      <article className="legal-paper-page container-page py-20 md:py-28">
         <p className="mb-4 text-[10px] font-semibold uppercase tracking-[0.22em] text-accent">
           Rechtliches
         </p>
@@ -191,7 +191,7 @@ function Datenschutz() {
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <section>
+    <section className="legal-paper-section">
       <h2 className="font-display text-xl font-semibold text-ink md:text-2xl">{title}</h2>
       <div className="mt-4 space-y-3 text-lg leading-relaxed text-ink-muted">{children}</div>
     </section>

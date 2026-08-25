@@ -6,6 +6,146 @@ html {
   scrollbar-width: none;
 }
 
+/* Shared paper language for agency and legal pages. */
+.agency-paper-page,
+  .legal-paper-page {
+    color: #2a1f17;
+  }
+
+  .agency-paper-page h1,
+  .agency-paper-page h2,
+  .agency-paper-page h3,
+  .legal-paper-page h1,
+  .legal-paper-page h2 {
+    font-family: var(--font-editorial);
+  }
+
+  .agency-paper-hero {
+    position: relative;
+    padding: clamp(2.4rem, 5vw, 4.8rem);
+    background: #f8f3ea;
+    filter: drop-shadow(0 0.7rem 0.7rem rgb(69 45 30 / 0.12));
+    -webkit-mask: url("/images/torn-mask-b.svg") center / 100% 100% no-repeat;
+    mask: url("/images/torn-mask-b.svg") center / 100% 100% no-repeat;
+  }
+
+  .agency-paper-hero::before {
+    position: absolute;
+    top: 0.45rem;
+    left: 50%;
+    width: 8.5rem;
+    height: 1.55rem;
+    background: rgb(217 205 187 / 0.82);
+    content: "";
+    transform: translateX(-50%) rotate(-1.8deg);
+  }
+
+  .agency-paper-card {
+    border: 0;
+    background: #f8f3ea;
+    filter: drop-shadow(0 0.45rem 0.4rem rgb(69 45 30 / 0.11));
+    -webkit-mask: url("/images/torn-mask-a.svg") center / 100% 100% no-repeat;
+    mask: url("/images/torn-mask-a.svg") center / 100% 100% no-repeat;
+  }
+
+  .agency-paper-card:nth-child(2) {
+    transform: translateY(0.35rem) rotate(0.18deg);
+    -webkit-mask-image: url("/images/torn-mask-b.svg");
+    mask-image: url("/images/torn-mask-b.svg");
+  }
+
+  .agency-paper-card:nth-child(3) {
+    transform: translateY(-0.2rem) rotate(-0.16deg);
+    -webkit-mask-image: url("/images/torn-mask-c.svg");
+    mask-image: url("/images/torn-mask-c.svg");
+  }
+
+  .agency-paper-section > div:first-child {
+    border-color: rgb(139 90 43 / 0.34);
+  }
+
+  .agency-paper-contact {
+    border: 0;
+    color: #f8f3ea;
+    background: #8b5a2b;
+    filter: drop-shadow(0 0.65rem 0.55rem rgb(69 45 30 / 0.14));
+    -webkit-mask: url("/images/torn-mask-c.svg") center / 100% 100% no-repeat;
+    mask: url("/images/torn-mask-c.svg") center / 100% 100% no-repeat;
+  }
+
+  .agency-paper-contact h2,
+  .agency-paper-contact p,
+  .agency-paper-contact a {
+    color: inherit;
+  }
+
+  .agency-paper-contact a {
+    border-color: rgb(248 243 234 / 0.45);
+  }
+
+  .legal-paper-page > h1 {
+    display: inline-block;
+    padding: 0.35rem 1.25rem 0.65rem;
+    color: #f8f3ea;
+    background: #8b5a2b;
+    -webkit-mask: url("/images/torn-mask-a.svg") center / 100% 100% no-repeat;
+    mask: url("/images/torn-mask-a.svg") center / 100% 100% no-repeat;
+  }
+
+  .legal-paper-page > div:nth-of-type(1) {
+    gap: 2rem;
+  }
+
+  .legal-paper-section {
+    padding: clamp(1.4rem, 3vw, 2.2rem);
+    background: rgb(248 243 234 / 0.78);
+    filter: drop-shadow(0 0.32rem 0.3rem rgb(69 45 30 / 0.08));
+  }
+
+  .legal-paper-section:nth-child(3n + 2) {
+    background: rgb(237 228 214 / 0.76);
+  }
+
+  .legal-paper-section h2::after {
+    display: block;
+    width: 3.4rem;
+    height: 1px;
+    margin-top: 0.75rem;
+    background: #8b5a2b;
+    content: "";
+    transform: rotate(-1.5deg);
+  }
+
+  @media (max-width: 640px) {
+    .agency-paper-hero {
+      padding: 3.4rem 1.35rem 2.5rem;
+    }
+
+    .agency-paper-card,
+    .agency-paper-card:nth-child(2),
+    .agency-paper-card:nth-child(3) {
+      transform: none;
+    }
+
+    .agency-paper-contact {
+      padding-inline: 1.35rem;
+    }
+
+    .legal-paper-section {
+      padding: 1.35rem 1.15rem;
+    }
+
+    .legal-paper-page > h1 {
+      display: block;
+      width: fit-content;
+      max-width: 100%;
+      font-size: clamp(2rem, 10vw, 2.65rem);
+      line-height: 1;
+      overflow-wrap: break-word;
+      hyphens: auto;
+    }
+  }
+
 @layer components {
   .paper-hero-proof,
   .paper-offer,
