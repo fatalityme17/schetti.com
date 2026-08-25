@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" preserveAspectRatio="none">
+  <defs>
+    <filter id="fiber" x="-4%" y="-4%" width="108%" height="108%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.018 0.11" numOctaves="2" seed="17" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="11" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <polygon filter="url(#fiber)" fill="white" points="11,18 68,13 112,20 179,17 216,28 271,19 325,21 391,8 427,15 486,11 551,20 603,14 676,23 721,17 789,19 846,10 913,16 990,13 985,73 991,128 984,182 990,246 978,293 983,351 973,409 988,464 982,527 987,588 977,641 983,698 974,754 988,813 982,866 987,924 978,986 907,979 853,985 797,976 738,987 681,979 615,982 563,974 504,988 446,980 382,986 324,976 269,984 204,972 159,982 91,976 12,985 18,928 12,872 20,815 11,757 22,704 14,649 20,594 10,531 18,481 13,418 23,367 14,309 20,253 12,196 19,142 10,83"/>
+</svg>

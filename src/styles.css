@@ -6,6 +6,48 @@ html {
   scrollbar-width: none;
 }
 
+@layer components {
+  .paper-hero-proof,
+  .paper-offer,
+  .paper-process,
+  .paper-services,
+  .paper-service-slips article,
+  .paper-cta,
+  .paper-about,
+  .paper-contact {
+    clip-path: none;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+  }
+
+  .paper-offer,
+  .paper-contact,
+  .paper-service-slips article:nth-child(3n + 1) {
+    -webkit-mask-image: url("/images/torn-mask-a.svg");
+    mask-image: url("/images/torn-mask-a.svg");
+  }
+
+  .paper-process,
+  .paper-about,
+  .paper-service-slips article:nth-child(3n + 2),
+  .paper-cta {
+    -webkit-mask-image: url("/images/torn-mask-b.svg");
+    mask-image: url("/images/torn-mask-b.svg");
+  }
+
+  .paper-services,
+  .paper-hero-proof,
+  .paper-service-slips article:nth-child(3n) {
+    -webkit-mask-image: url("/images/torn-mask-c.svg");
+    mask-image: url("/images/torn-mask-c.svg");
+  }
+
+}
+
 html::-webkit-scrollbar {
   display: none;
 }
@@ -3020,6 +3062,51 @@ html::-webkit-scrollbar {
 
     .offer-tax {
       grid-column: 1;
+    }
+  }
+}
+
+/* Organic paper contours deliberately override the earlier geometric cuts. */
+@layer components {
+  .paper-hero-proof,
+  .paper-offer,
+  .paper-process,
+  .paper-services,
+  .paper-service-slips article,
+  .paper-cta,
+  .paper-about,
+  .paper-contact {
+    clip-path: none;
+  }
+
+  .paper-offer {
+    transform: translate(-0.35rem, -0.25rem) rotate(-0.32deg);
+  }
+
+  .paper-process {
+    transform: translate(0.18rem, 0.42rem) rotate(0.24deg);
+  }
+
+  .paper-services {
+    transform: translate(-0.32rem, -0.28rem) rotate(-0.28deg);
+  }
+
+  .paper-about {
+    transform: translate(0.2rem, 0.34rem) rotate(-0.2deg);
+  }
+
+  .paper-contact {
+    transform: translate(-0.38rem, -0.2rem) rotate(0.22deg);
+  }
+
+  @media (max-width: 820px) {
+    .paper-offer,
+    .paper-process,
+    .paper-services,
+    .paper-about,
+    .paper-contact {
+      margin-inline: 0;
+      transform: none;
     }
   }
 }
