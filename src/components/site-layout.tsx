@@ -37,7 +37,7 @@ export function SiteHeader() {
             Olga Schetti
           </span>
           <span className="site-shared-role text-ink-muted">
-            - IT Freiberuflerin
+            - IT-Freiberuflerin
           </span>
         </a>
         <nav className="site-shared-nav hidden items-center text-ink-muted md:flex">
