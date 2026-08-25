@@ -172,8 +172,7 @@ html::-webkit-scrollbar {
   }
 
   .paper-hero {
-    display: grid;
-    grid-template-columns: minmax(30rem, 45fr) minmax(39rem, 55fr);
+    display: block;
     height: 32.25rem;
     min-height: 32.25rem;
   }
@@ -187,10 +186,11 @@ html::-webkit-scrollbar {
     min-height: 0;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 10.1rem clamp(3.5rem, 4.5vw, 4.4rem) 1.2rem;
+    padding: 8.6rem clamp(3.5rem, 6vw, 6.4rem) 1.2rem;
   }
 
   .paper-hero-copy h1 {
+    width: min(100%, 54rem);
     font-family: var(--font-editorial);
     font-size: clamp(4rem, 4.5vw, 4.35rem);
     font-weight: 700;
@@ -200,8 +200,8 @@ html::-webkit-scrollbar {
 
   .paper-hero-copy h1 span {
     display: block;
-    width: 42rem;
-    max-width: none;
+    width: auto;
+    max-width: 100%;
   }
 
   .paper-hero-copy h1 em {

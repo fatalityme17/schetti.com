@@ -270,27 +270,6 @@ export function EditorialHome({ language }: { language: Language }) {
               </h1>
               <p className="olga-hand paper-hero-note">{t.heroHand}</p>
             </div>
-            <div
-              className="paper-workboard"
-              aria-label={isRussian ? "Состав проекта" : "Projektbausteine"}
-            >
-              {t.sheets.map((sheet, index) => (
-                <article className={`project-sheet project-sheet-${sheet.kind}`} key={sheet.title}>
-                  <span className="paper-tape" aria-hidden="true" />
-                  <h2>{sheet.title}</h2>
-                  {sheet.kind === "wireframe" ? <WebsiteSketch /> : null}
-                  {sheet.kind === "structure" ? <StructureSketch /> : null}
-                  {sheet.kind === "modules" ? (
-                    <ul className="olga-hand">
-                      {sheet.items.map((item) => (
-                        <li key={item}>{item}</li>
-                      ))}
-                    </ul>
-                  ) : null}
-                  <span className="sheet-number">0{index + 1}</span>
-                </article>
-              ))}
-            </div>
           </section>
 
           <div className="paper-offer-process-services">
