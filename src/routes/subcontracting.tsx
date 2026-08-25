@@ -190,7 +190,7 @@ function Profile() {
   return (
     <SectionHeader id="profil" title="Profil">
       <div className="agency-profile-grid grid gap-10 md:grid-cols-2 md:gap-16">
-        <div>
+        <div className="agency-profile-column">
           <h3 className="font-display text-2xl font-semibold text-ink">
             Business Analysis · Prozessmanagement · Digitalisierung
           </h3>
@@ -201,6 +201,14 @@ function Profile() {
             <li>Geschäftsprozesse, Anforderungen und Automatisierungspotenziale analysieren</li>
             <li>CRM-, Formular- und Workflow-Prozesse strukturieren und weiterentwickeln</li>
             <li>Fachliche und technische Anforderungen für digitale Lösungen definieren</li>
+          </ul>
+        </div>
+        <div className="agency-profile-column border-t border-line pt-6 md:border-l md:border-t-0 md:pl-10 md:pt-0">
+          <h3 className="font-display text-2xl font-semibold text-ink">Fokus in der Umsetzung</h3>
+          <p className="mt-2 text-sm text-ink-muted">
+            Von der fachlichen Klärung bis zum produktiven Einsatz.
+          </p>
+          <ul className="agency-profile-points mt-7 space-y-3 text-ink-muted">
             <li>Backlogs, Tests und Einführung neuer Funktionen fachlich begleiten</li>
             <li>
               Digitale Projekte von der Konzeption bis zum produktiven Einsatz unterstützen
@@ -211,20 +219,10 @@ function Profile() {
             </li>
           </ul>
         </div>
-        <div className="border-t border-line pt-6 md:border-l md:border-t-0 md:pl-10 md:pt-0">
-          <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-ink-muted">
-            Qualifikation
-          </p>
-          <p className="mt-5 font-display font-semibold text-ink">
-            Hochschulabschluss · Informationssysteme & -technologien
-          </p>
-          <p className="mt-2 font-display font-semibold text-ink">
-            Master · Optotechnik & Robotik
-          </p>
-          <p className="mt-2 text-sm leading-relaxed text-ink-muted">
-            Anerkennung der Berufsbezeichnung „Ingenieurin“ in Deutschland
-          </p>
-          <p className="mt-2 text-sm font-semibold text-ink">DE · EN · RU</p>
+        <div className="agency-profile-credentials md:col-span-2">
+          <span>Hochschulabschluss · Informationssysteme & -technologien</span>
+          <span>Anerkannte Ingenieurin in Deutschland</span>
+          <span>DE · EN · RU</span>
         </div>
       </div>
     </SectionHeader>

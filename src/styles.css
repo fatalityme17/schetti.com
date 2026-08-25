@@ -225,6 +225,24 @@ html {
     transform: rotate(-4deg);
   }
 
+  .agency-profile-credentials {
+    display: grid;
+    grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr) auto;
+    gap: 0.8rem 1.5rem;
+    align-items: center;
+    padding-top: 1.35rem;
+    border-top: 1px solid rgb(139 90 43 / 0.28);
+    color: #5e4b43;
+    font-size: 0.78rem;
+    line-height: 1.45;
+  }
+
+  .agency-profile-credentials span:last-child {
+    font-weight: 700;
+    color: #2a1f17;
+    white-space: nowrap;
+  }
+
   .agency-terms-grid {
     align-items: center;
     color: #f8f3ea;
@@ -335,6 +353,10 @@ html {
     .agency-profile-grid,
     .agency-terms-grid {
       padding: 1.6rem 1.2rem;
+    }
+
+    .agency-profile-credentials {
+      grid-template-columns: 1fr;
     }
 
     .agency-paper-contact {

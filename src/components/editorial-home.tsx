@@ -215,7 +215,7 @@ export function EditorialHome({ language }: { language: Language }) {
         <header className="paper-site-header">
           <a href={isRussian ? "/ru" : "/"} className="paper-site-brand">
             <strong>{t.brand}</strong>
-            <span>— {t.role}</span>
+            <span> - {t.role}</span>
           </a>
           <nav className="paper-site-nav" aria-label={isRussian ? "Навигация" : "Hauptnavigation"}>
             {t.nav.map(([href, label]) => (
