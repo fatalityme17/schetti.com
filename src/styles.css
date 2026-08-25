@@ -101,9 +101,7 @@ html::-webkit-scrollbar {
     width: min(100%, 96rem);
     margin-inline: auto;
     color: #2a1f17;
-    background:
-      linear-gradient(rgb(255 249 237 / 0.55), rgb(255 249 237 / 0.55)),
-      url("/images/paper-grain-512.webp");
+    background: #f4eee6;
     box-shadow: none;
   }
 
