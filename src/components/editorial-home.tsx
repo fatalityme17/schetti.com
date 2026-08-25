@@ -10,6 +10,7 @@ import {
   PencilSimple,
   PaperPlaneTilt,
   Phone,
+  ShareNetwork,
   WhatsappLogo,
 } from "@phosphor-icons/react";
 import { Page } from "@/components/site-layout";
@@ -53,9 +54,12 @@ const copy = {
     offerIntro:
       "Wir klären gemeinsam, wie Sie Ihre Leistungen online präsentieren und welche Bausteine Sie wirklich brauchen.",
     offerItems: [
-      "Onepage-Website",
-      "Passende Module für Ihr Unternehmen",
-      "z. B. Google-Unternehmensprofil, WhatsApp Business, Online-Terminbuchung",
+      { title: "Onepage-Website" },
+      {
+        title: "Passende Module für Ihr Unternehmen",
+        detail:
+          "z. B. Google-Unternehmensprofil, WhatsApp Business, Online-Terminbuchung usw.",
+      },
     ],
     price: "490 €",
     tax: "Gemäß § 19 UStG wird keine Umsatzsteuer berechnet.",
@@ -95,6 +99,14 @@ const copy = {
           ["Individuelle IT-Projekte", "nach Absprache"],
         ],
       },
+      {
+        title: "SMM-Basisbetreuung",
+        note: "Gelegentliche Beiträge · keine Reichweiten- oder Influencer-Kampagnen",
+        items: [
+          ["Beiträge für Ihre digitale Präsenz", "nach Absprache"],
+          ["Keine Reichweiten- oder Influencer-Kampagnen", ""],
+        ],
+      },
     ],
     servicesNote: "Technik verstehen muss nicht Ihr Job sein. Meiner schon.",
     aboutTitle: "Technik verständlich umgesetzt.",
@@ -115,7 +127,7 @@ const copy = {
 } as const;
 
 const processIcons = [ChatsCircle, PencilSimple, Monitor, PaperPlaneTilt];
-const serviceIcons = [PencilSimple, GearSix, Headphones];
+const serviceIcons = [PencilSimple, GearSix, Headphones, ShareNetwork];
 
 export function EditorialHome() {
   const t = copy.de;
@@ -188,9 +200,16 @@ export function EditorialHome() {
               <p className="paper-offer-intro">{t.offerIntro}</p>
               <ul>
                 {t.offerItems.map((item) => (
-                  <li key={item}>
+                  <li key={item.title}>
                     <Check size={18} weight="bold" aria-hidden="true" />
-                    {item}
+                    <span>
+                      {item.title}
+                      {"detail" in item ? (
+                        <small className="paper-offer-module-examples">
+                          {item.detail}
+                        </small>
+                      ) : null}
+                    </span>
                   </li>
                 ))}
               </ul>
@@ -235,7 +254,14 @@ export function EditorialHome() {
                     <article key={group.title}>
                       <div className="paper-service-title">
                         <Icon size={25} weight="thin" aria-hidden="true" />
-                        <h3 className="olga-hand">{group.title}</h3>
+                        <div>
+                          <h3 className="olga-hand">{group.title}</h3>
+                          {"note" in group ? (
+                            <small className="paper-service-summary">
+                              {group.note}
+                            </small>
+                          ) : null}
+                        </div>
                       </div>
                       <ul>
                         {group.items.map(([name, price]) => (
