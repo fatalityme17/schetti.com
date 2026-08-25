@@ -101,11 +101,7 @@ const copy = {
       },
       {
         title: "SMM-Basisbetreuung",
-        note: "Gelegentliche Beiträge · keine Reichweiten- oder Influencer-Kampagnen",
-        items: [
-          ["Beiträge für Ihre digitale Präsenz", "nach Absprache"],
-          ["Keine Reichweiten- oder Influencer-Kampagnen", ""],
-        ],
+        items: [["Beiträge für Ihre digitale Präsenz", "nach Absprache"]],
       },
     ],
     servicesNote: "Technik verstehen muss nicht Ihr Job sein. Meiner schon.",
@@ -256,11 +252,6 @@ export function EditorialHome() {
                         <Icon size={25} weight="thin" aria-hidden="true" />
                         <div>
                           <h3 className="olga-hand">{group.title}</h3>
-                          {"note" in group ? (
-                            <small className="paper-service-summary">
-                              {group.note}
-                            </small>
-                          ) : null}
                         </div>
                       </div>
                       <ul>
