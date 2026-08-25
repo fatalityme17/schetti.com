@@ -137,7 +137,15 @@ export function EditorialHome() {
             <span> - {t.role}</span>
           </a>
           <nav className="paper-site-nav" aria-label="Hauptnavigation">
-            {t.nav.map(([href, label]) => (
+            {t.nav.slice(0, -1).map(([href, label]) => (
+              <a href={href} key={href}>
+                {label}
+              </a>
+            ))}
+            <a className="paper-agency-nav-link" href={t.agencyHref}>
+              {t.agency}
+            </a>
+            {t.nav.slice(-1).map(([href, label]) => (
               <a href={href} key={href}>
                 {label}
               </a>

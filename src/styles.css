@@ -664,10 +664,10 @@ html::-webkit-scrollbar {
   }
 
   .paper-site-header {
-    position: absolute;
+    position: sticky;
     top: 0;
-    left: 50%;
-    z-index: 20;
+    left: auto;
+    z-index: 50;
     display: grid;
     grid-template-columns: minmax(21rem, 1fr) auto;
     align-items: center;
@@ -675,8 +675,9 @@ html::-webkit-scrollbar {
     min-height: 5rem;
     padding: 0.5rem 2.5rem;
     border-bottom: 0;
-    background: transparent;
-    transform: translateX(-50%);
+    background: rgb(244 238 230 / 0.94);
+    box-shadow: 0 1px 0 rgb(61 37 30 / 0.12);
+    backdrop-filter: blur(10px);
   }
 
   .paper-site-brand {
@@ -703,7 +704,7 @@ html::-webkit-scrollbar {
 
   .paper-site-nav {
     display: flex;
-    width: 24.2rem;
+    width: 34rem;
     align-items: center;
     justify-content: space-between;
   }
@@ -1665,14 +1666,14 @@ html::-webkit-scrollbar {
       width: 100%;
     }
     .paper-site-header {
-      position: relative;
+      position: sticky;
       top: 0;
       left: auto;
       grid-template-columns: minmax(0, 1fr) auto;
       min-height: 5.75rem;
       padding: 1rem clamp(1.4rem, 5.3vw, 2.8rem);
-      background: transparent;
-      backdrop-filter: none;
+      background: rgb(244 238 230 / 0.96);
+      backdrop-filter: blur(10px);
       transform: none;
     }
     .paper-site-header::after {
