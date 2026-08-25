@@ -6,6 +6,192 @@ html {
   scrollbar-width: none;
 }
 
+/* Restrained wide composition for the agency page. */
+.agency-paper-page {
+  --agency-content-width: 84rem;
+}
+
+.agency-paper-page :is(h1, h2, h3) {
+  font-family: var(--font-editorial);
+}
+
+.agency-paper-page :is(p, li, a) {
+  font-family: var(--font-sans);
+}
+
+.agency-paper-page > :is(header, section) {
+  width: min(100%, var(--agency-content-width));
+  margin-inline: auto;
+}
+
+.agency-paper-hero {
+  max-width: var(--agency-content-width);
+  padding: clamp(3.4rem, 5vw, 4.8rem) clamp(2rem, 6vw, 6.2rem) clamp(3.2rem, 4.5vw, 4.5rem);
+  margin-bottom: clamp(5rem, 7vw, 7rem);
+}
+
+.agency-paper-hero > p:first-child,
+.agency-eyebrow {
+  font-family: var(--font-sans);
+}
+
+.agency-paper-hero h1 {
+  max-width: 58rem;
+  font-size: clamp(3.7rem, 5.3vw, 5.4rem);
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+}
+
+.agency-paper-hero h1 + p {
+  max-width: 46rem;
+  font-size: clamp(1.15rem, 1.65vw, 1.4rem);
+  line-height: 1.65;
+}
+
+.agency-tracks {
+  padding: clamp(2.2rem, 4.5vw, 4.5rem);
+  margin-bottom: clamp(5rem, 7vw, 7rem);
+  background:
+    linear-gradient(rgb(248 243 234 / 0.9), rgb(248 243 234 / 0.9)),
+    url("/images/paper-grain-512.webp");
+  filter: drop-shadow(0 0.7rem 0.65rem rgb(69 45 30 / 0.1));
+  -webkit-mask: url("/images/torn-mask-b.svg") center / 100% 100% no-repeat;
+  mask: url("/images/torn-mask-b.svg") center / 100% 100% no-repeat;
+}
+
+.agency-track-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  border-top: 1px solid rgb(169 71 32 / 0.3);
+}
+
+.agency-track-grid .agency-paper-card,
+.agency-track-grid .agency-paper-card:nth-child(2),
+.agency-track-grid .agency-paper-card:nth-child(3) {
+  min-width: 0;
+  padding: 2.2rem clamp(1.2rem, 2vw, 2rem) 1.2rem;
+  border-left: 1px solid rgb(169 71 32 / 0.24);
+  background: transparent;
+  filter: none;
+  -webkit-mask: none;
+  mask: none;
+  transform: none;
+}
+
+.agency-track-grid .agency-paper-card:first-child {
+  border-left: 0;
+  padding-left: 0;
+}
+
+.agency-track-grid .agency-paper-card:last-child {
+  padding-right: 0;
+}
+
+.agency-track-grid .agency-card-tape {
+  display: none;
+}
+
+.agency-track-grid h3 {
+  max-width: 18ch;
+  font-size: clamp(1.45rem, 2vw, 2rem);
+  line-height: 1.08;
+}
+
+.agency-track-grid p,
+.agency-track-grid li {
+  max-width: 38ch;
+}
+
+.agency-formats,
+.agency-paper-section,
+.agency-paper-contact {
+  margin-bottom: clamp(5rem, 7vw, 7rem);
+}
+
+.agency-formats {
+  padding: clamp(2.2rem, 4.5vw, 4.25rem);
+}
+
+.agency-format-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.agency-format-note {
+  min-width: 0;
+}
+
+.agency-profile-grid {
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+  gap: clamp(2.5rem, 5vw, 5rem);
+}
+
+.agency-profile-column :is(p, li) {
+  max-width: 54ch;
+}
+
+.agency-terms-grid {
+  grid-template-columns: minmax(20rem, 0.8fr) minmax(24rem, 1.2fr);
+  gap: clamp(2.5rem, 6vw, 6rem);
+}
+
+.agency-terms-grid > div:last-child {
+  max-width: 36rem;
+}
+
+.agency-paper-contact {
+  padding-block: clamp(3.5rem, 6vw, 5.5rem);
+}
+
+@media (max-width: 900px) {
+  .agency-paper-page {
+    --agency-content-width: 46rem;
+  }
+
+  .agency-paper-hero h1 {
+    font-size: clamp(3rem, 9vw, 4.6rem);
+  }
+
+  .agency-track-grid,
+  .agency-format-grid,
+  .agency-profile-grid,
+  .agency-terms-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .agency-track-grid .agency-paper-card,
+  .agency-track-grid .agency-paper-card:nth-child(2),
+  .agency-track-grid .agency-paper-card:nth-child(3) {
+    padding: 2rem 0;
+    border-top: 1px solid rgb(169 71 32 / 0.22);
+    border-left: 0;
+  }
+
+  .agency-track-grid .agency-paper-card:first-child {
+    border-top: 0;
+  }
+
+  .agency-profile-column + .agency-profile-column {
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .agency-terms-grid {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .agency-paper-hero,
+  .agency-tracks,
+  .agency-formats {
+    padding-inline: 1.35rem;
+  }
+
+  .agency-paper-hero h1 {
+    font-size: clamp(2.65rem, 13vw, 3.8rem);
+  }
+}
+
 /* Shared paper language for agency and legal pages. */
 .agency-paper-page,
   .legal-paper-page {

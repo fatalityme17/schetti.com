@@ -33,7 +33,7 @@ export function SiteHeader() {
     <header className="site-shared-header sticky top-0 z-40 border-b border-line/70 bg-background/95">
       <div className="site-shared-header-inner flex items-center justify-between">
         <a href={homeHref} className="site-shared-brand flex min-w-0 items-baseline gap-2">
-          <span className="font-display font-semibold tracking-tight text-ink">
+          <span className="font-semibold tracking-tight text-ink">
             Olga Schetti
           </span>
           <span className="site-shared-role text-ink-muted">

@@ -111,7 +111,7 @@ function Tracks() {
       <h2 className="font-display text-4xl font-bold tracking-tight text-ink md:text-5xl">
         Wo ich Ihr Projekt entlaste.
       </h2>
-      <div className="mt-12 grid gap-8 lg:grid-cols-3">
+      <div className="agency-track-grid mt-10 grid lg:grid-cols-3">
         {tracks.map((track) => (
           <div key={track.title} className="agency-paper-card border border-line bg-surface p-7">
             <span className="agency-card-tape" aria-hidden="true" />
@@ -166,7 +166,7 @@ function CollaborationFormats() {
       <h2 className="font-display text-4xl font-bold tracking-tight text-ink md:text-5xl">
         Passend zur Projektphase.
       </h2>
-      <div className="mt-12 grid gap-8 md:grid-cols-3">
+      <div className="agency-format-grid mt-10 grid gap-8 md:grid-cols-3">
         {formats.map((format) => (
           <div key={format.title} className="agency-format-note border-t border-line pt-6">
             <h3 className="font-display text-xl font-semibold text-ink">{format.title}</h3>
