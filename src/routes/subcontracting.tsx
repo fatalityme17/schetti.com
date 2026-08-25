@@ -31,7 +31,7 @@ export const Route = createFileRoute("/subcontracting")({
 function Subcontracting() {
   return (
     <Page>
-      <article className="agency-paper-page container-page py-14 md:py-20">
+      <article className="agency-paper-page container-page py-10 md:py-16">
         <Hero />
         <Tracks />
         <CollaborationFormats />
@@ -56,13 +56,12 @@ function Hero() {
         Ich strukturiere Anforderungen, Prozesse und Entscheidungen, damit Fachbereich, Design und
         Entwicklung zügig umsetzen können.
       </p>
-      <a
-        href="#kontakt"
-        className="mt-9 inline-flex border-b border-ink/40 pb-0.5 text-sm font-medium text-ink transition hover:border-accent hover:text-accent"
-      >
+      <a href="#kontakt" className="agency-primary-cta mt-9 inline-flex text-sm font-medium">
         Kontakt →
       </a>
-      <p className="mt-5 text-xs text-ink-muted">Aktuell verfügbar · remote im DACH-Raum</p>
+      <p className="agency-availability mt-5 text-xs text-ink-muted">
+        Aktuell verfügbar · remote im DACH-Raum
+      </p>
     </header>
   );
 }
@@ -99,8 +98,8 @@ function Tracks() {
   ];
 
   return (
-    <section id="sparten" className="mb-24 scroll-mt-24 md:mb-32">
-      <p className="mb-4 text-[10px] font-semibold uppercase tracking-[0.22em] text-accent">
+    <section id="sparten" className="agency-tracks mb-24 scroll-mt-24 md:mb-32">
+      <p className="agency-eyebrow mb-4 text-[10px] font-semibold uppercase tracking-[0.22em] text-accent">
         01 — Leistungen
       </p>
       <h2 className="font-display text-4xl font-bold tracking-tight text-ink md:text-5xl">
@@ -109,6 +108,7 @@ function Tracks() {
       <div className="mt-12 grid gap-8 lg:grid-cols-3">
         {tracks.map((track) => (
           <div key={track.title} className="agency-paper-card border border-line bg-surface p-7">
+            <span className="agency-card-tape" aria-hidden="true" />
             <h3 className="font-display text-2xl font-semibold text-ink">{track.title}</h3>
             <p className="mt-2 text-sm text-ink-muted">{track.subtitle}</p>
             <ul className="mt-7 space-y-3 text-sm text-ink-muted">
@@ -148,8 +148,8 @@ function CollaborationFormats() {
   ];
 
   return (
-    <section id="formate" className="mb-24 scroll-mt-24 md:mb-32">
-      <p className="mb-4 text-[10px] font-semibold uppercase tracking-[0.22em] text-accent">
+    <section id="formate" className="agency-formats mb-24 scroll-mt-24 md:mb-32">
+      <p className="agency-eyebrow mb-4 text-[10px] font-semibold uppercase tracking-[0.22em] text-accent">
         02 — Zusammenarbeit
       </p>
       <h2 className="font-display text-4xl font-bold tracking-tight text-ink md:text-5xl">
@@ -157,13 +157,13 @@ function CollaborationFormats() {
       </h2>
       <div className="mt-12 grid gap-8 md:grid-cols-3">
         {formats.map((format) => (
-          <div key={format.title} className="border-t border-line pt-6">
+          <div key={format.title} className="agency-format-note border-t border-line pt-6">
             <h3 className="font-display text-xl font-semibold text-ink">{format.title}</h3>
             <p className="mt-3 text-sm leading-relaxed text-ink-muted">{format.body}</p>
           </div>
         ))}
       </div>
-      <ul className="mt-10 flex flex-wrap gap-2">
+      <ul className="agency-deliverables mt-10 flex flex-wrap gap-2">
         {deliverables.map((item) => (
           <li key={item} className="border border-line bg-surface-2 px-3 py-2 text-sm text-ink">
             {item}
@@ -177,13 +177,13 @@ function CollaborationFormats() {
 function Profile() {
   return (
     <SectionHeader id="profil" no="03" title="Profil">
-      <div className="grid gap-10 md:grid-cols-2 md:gap-16">
+      <div className="agency-profile-grid grid gap-10 md:grid-cols-2 md:gap-16">
         <div>
           <h3 className="font-display text-2xl font-semibold text-ink">
             IT-Projektmanagement & Digitalisierung
           </h3>
           <p className="mt-2 text-sm text-ink-muted">Projekterfahrung seit 2017</p>
-          <ul className="mt-7 space-y-3 text-ink-muted">
+          <ul className="agency-profile-points mt-7 space-y-3 text-ink-muted">
             <li>Anforderungen, Prozesse und Automatisierungspotenziale analysieren</li>
             <li>CRM-Workflows und digitale Abläufe strukturieren</li>
             <li>Projekte von der Konzeption bis zum produktiven Einsatz begleiten</li>
@@ -209,9 +209,11 @@ function Profile() {
 function Konditionen() {
   return (
     <SectionHeader id="konditionen" no="04" title="Konditionen">
-      <div className="grid gap-10 md:grid-cols-2 md:gap-16">
+      <div className="agency-terms-grid grid gap-10 md:grid-cols-2 md:gap-16">
         <div>
-          <p className="font-display text-5xl font-bold text-ink md:text-6xl">ab 55 €/Std</p>
+          <p className="agency-rate font-display text-5xl font-bold text-ink md:text-6xl">
+            ab 55 €/Std
+          </p>
           <p className="mt-3 text-sm text-ink-muted">
             Rahmen und Umfang nach Projekt · Gemäß § 19 UStG wird keine Umsatzsteuer berechnet.
           </p>
@@ -262,7 +264,7 @@ function SectionHeader({
   return (
     <section id={id} className="agency-paper-section mb-24 scroll-mt-24 md:mb-32">
       <div className="mb-10 flex items-baseline gap-6 border-b border-line pb-4">
-        <span className="font-display text-sm font-semibold italic text-accent">{no}</span>
+        <span className="agency-section-number olga-hand text-accent">{no}</span>
         <h2 className="font-display text-3xl font-bold tracking-tight text-ink md:text-4xl">
           {title}
         </h2>
