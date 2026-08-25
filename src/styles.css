@@ -3109,4 +3109,37 @@ html::-webkit-scrollbar {
       transform: none;
     }
   }
+
+  @media (max-width: 480px) {
+    .paper-offer {
+      padding-bottom: 3.75rem;
+    }
+
+    .paper-process {
+      height: auto;
+      min-height: 19.25rem;
+      padding-bottom: 2.2rem;
+    }
+
+    .paper-services {
+      height: auto;
+      min-height: 13.25rem;
+      padding-top: 1.15rem;
+      padding-bottom: 1.65rem;
+    }
+
+    .paper-service-slips {
+      gap: 0.55rem;
+    }
+
+    .paper-service-slips article {
+      height: auto;
+      min-height: 3.35rem;
+      padding-block: 0.55rem;
+    }
+
+    .paper-service-title h3 {
+      line-height: 1.05;
+    }
+  }
 }
