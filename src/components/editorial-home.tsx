@@ -19,7 +19,7 @@ import { RoughMark } from "@/components/rough-mark";
 const copy = {
   de: {
     brand: "Olga Schetti",
-    role: "IT-Freiberuflerin",
+    role: "IT Freiberuflerin",
     nav: [
       ["#starter", "Angebot"],
       ["#leistungen", "Ablauf"],

@@ -30,24 +30,24 @@ export function SiteHeader() {
       };
 
   return (
-    <header className="sticky top-0 z-40 border-b border-line/70 bg-background/90 backdrop-blur">
-      <div className="container-page flex h-16 items-center justify-between">
-        <a href={homeHref} className="flex min-w-0 items-baseline gap-3">
-          <span className="font-display text-lg font-semibold tracking-tight text-ink">
+    <header className="site-shared-header sticky top-0 z-40 border-b border-line/70 bg-background/95">
+      <div className="site-shared-header-inner flex items-center justify-between">
+        <a href={homeHref} className="site-shared-brand flex min-w-0 items-baseline gap-2">
+          <span className="font-display font-semibold tracking-tight text-ink">
             Olga Schetti
           </span>
-          <span className="hidden text-[9px] font-semibold uppercase tracking-[0.18em] text-ink-muted lg:inline">
-            — IT-Freiberuflerin
+          <span className="site-shared-role text-ink-muted">
+            - IT Freiberuflerin
           </span>
         </a>
-        <nav className="hidden items-center gap-5 text-sm text-ink-muted md:flex lg:gap-8">
+        <nav className="site-shared-nav hidden items-center text-ink-muted md:flex">
           {navItems.map((item) => (
             <a key={item.href} href={item.href} className="transition hover:text-ink">
               {item.label}
             </a>
           ))}
         </nav>
-        <div className="flex items-center gap-3 lg:gap-5">
+        <div className="site-shared-tools flex items-center gap-3 lg:gap-5">
           <a
             href={audienceLink.href}
             className="hidden text-sm font-medium text-ink-muted transition hover:text-ink md:inline-flex"

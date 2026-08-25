@@ -34,7 +34,7 @@ export const Route = createFileRoute("/subcontracting")({
 function Subcontracting() {
   return (
     <Page>
-      <article className="agency-paper-page container-page py-10 md:py-16">
+      <article className="agency-paper-page py-10 md:py-16">
         <Hero />
         <Tracks />
         <CollaborationFormats />
